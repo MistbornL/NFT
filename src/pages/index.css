@@ -1,0 +1,17 @@
+p {
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 681px;
+    top: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
