@@ -1,14 +1,14 @@
-import { NavLink } from "react-router-dom";
+import Header from "../components/header/header";
 import "./index.css"
-
 
 const Home = () => {
     return (
-        <div className="wrap">
-            <NavLink to="/">
-                <p>Home</p>
-            </NavLink>
-        </div>
+        <header>
+            <div className="wrap">
+                <Header/>
+            </div>
+            <div className="line"></div>    
+        </header>
     )
 }
 

@@ -60,6 +60,8 @@
 }
 
 .logo {
+  margin-top: 8px;
+  margin-left: 137px;
   width: 187px;
   height: 52px;
 }
@@ -69,15 +71,12 @@
   display:flex;
   width: 1160px;
   height: 85px;
+  align-items: center;
 }
 
 .search input {
-  position: absolute;
   width: 261px;
   height: 35px;
-  left: 327px;
-  top: 25px;
-
   background: rgba(73, 86, 106, 0.35);
   border: 1px solid #2D4662;
   box-sizing: border-box;
