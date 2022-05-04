@@ -29,9 +29,9 @@ const Header = () => {
                 <p>Buy and sell NFTs from the world’s top artists.</p>
 
                 <div className = "header_buttons" style = {{display: "flex"}}>
-                    <button className='start' type="submit">Get Started</button>
+                    <button className='start' type="button">Get Started</button>
                     <div style={{width: '20px'}}></div>
-                    <button className='create' type="submit">Create</button>
+                    <button className='create' type="button">Create</button>
                 </div>
                 
             </div>
