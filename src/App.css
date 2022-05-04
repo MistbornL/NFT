@@ -60,8 +60,7 @@
 }
 
 .logo {
-  margin-top: 8px;
-  margin-left: 137px;
+  display: flex;
   width: 187px;
   height: 52px;
 }
@@ -72,9 +71,11 @@
   width: 1440px;
   height: 85px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .search input {
+  margin-left: 150px;
   width: 261px;
   height: 35px;
   background: rgba(73, 86, 106, 0.35);

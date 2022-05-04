@@ -24,6 +24,11 @@ p {
     color: #FFFFFF;
 }
 
+ul li{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
 .line {
     position: absolute;
     width: 100%;
@@ -32,38 +37,4 @@ p {
     top: 85px;
     background: #ffffff;
     opacity: 29%;
-}
-
-
-.moon {
-    display: flex;
-    justify-content: flex-end;
-    /* margin-right: 168px; */
-    /* float: right; */
-    width: 100%;
-    max-width: 1440px;
-    margin-top: 210px;
-}
-
-.moon img{
-
-    width:144px;
-    height:149px;
-}
-
-
-.statue {
-    display: inline-block;
-    float: right;
-    margin-top:30px;
-    margin-right: -350px;
-    mix-blend-mode: lighten;
-    border-radius: 2px;
-
-}
-
-
-.statue img{
-    background-image: transparent;
-    mix-blend-mode: lighten;
 }

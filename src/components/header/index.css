@@ -28,3 +28,63 @@
     line-height: 21px;
 }
 
+
+.futa {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.moon {
+    mix-blend-mode: screen;
+    justify-content: flex-end;
+}
+
+.middle_head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 653px
+}
+
+
+.moon-statue {
+    size: 100%;
+    width:630px;
+    height: 540px;
+    mix-blend-mode: lighten;
+}
+
+.artworks {
+    justify-content:flex-start;
+    width: 500px;
+    height: 300px;
+}
+
+.artworks p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+    display:inline;
+}
+
+
+.artworks span {
+    width: 480px;
+    height: 150px;
+    left: 140px;
+    top: 275px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    background: linear-gradient(89.89deg, #4075FF 37.7%, #4075FF 37.7%, #FF00E5 98.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
