@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="wrap">
             <Header/>
-            <div className="line"></div>      
+            <div className="line"/>   
         </div>
 
     )
