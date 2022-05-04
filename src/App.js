@@ -13,6 +13,7 @@ function App() {
                 <Route path="/Explore"  element={<Explore />} />
                 <Route path="/Activity"  element={<Activity />} />
           </Routes>   
+          
   )
 }
 

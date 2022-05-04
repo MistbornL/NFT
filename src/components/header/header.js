@@ -23,8 +23,9 @@ const Header = () => {
 
             </div>
         </div>
-        
+
         <Middle />
+        
         
         
     </header>

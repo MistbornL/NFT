@@ -150,3 +150,48 @@
 
     color: #4075FF;
 }
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 93px;
+    background: linear-gradient(89.98deg, rgba(40, 65, 130, 0.2) 3.28%, rgba(109, 33, 102, 0.2) 99.98%);
+}
+
+.box {
+    margin-top:20px;
+    margin-left: 40px;
+    width:80px;
+    height: 93px;
+}
+
+.box h2 {
+    margin:0;
+    width: 74px;
+    height: 42px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #4075FF;
+}
+
+
+.box h3 {
+    margin:0;
+    width: 80px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
