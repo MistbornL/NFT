@@ -25,13 +25,14 @@ const Header = () => {
 
         <div className="middle_head">
             <div className="artworks">
-                <p>Collect Super Rare Digital <span>Artworks</span></p>
+                <h1>Collect Super Rare Digital <span>ARTWORKS</span></h1>
+                <p>Buy and sell NFTs from the world’s top artists.</p>
+                <button className='start' type="submit">Get Started</button>
             </div>
 
             <div className="moon-statue">
                 <img src={moonstatue} alt="statue"/> 
             </div>
-            
         </div>
         
     </header>

@@ -51,17 +51,22 @@
 .moon-statue {
     size: 100%;
     width:630px;
-    height: 540px;
+    height: 640px;
     mix-blend-mode: lighten;
 }
+
+/* .moon-statue img{
+    width: 705.77px;
+    height: 576.49px;
+} */
 
 .artworks {
     justify-content:flex-start;
     width: 500px;
-    height: 300px;
+    height: 180px;
 }
 
-.artworks p {
+.artworks h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -71,6 +76,22 @@
     display:inline;
 }
 
+
+.artworks p{
+    width: 307px;
+    height: 54px;
+    left: 140px;
+    top: 457px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+}
 
 .artworks span {
     width: 480px;
@@ -87,4 +108,23 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+.start {
+    width: 135px;
+    height: 40px;
+    left: 140px;
+    top: 541px;
+
+    background: #4075FF;
+    border-radius: 10px;
+    color: white;
+
+    
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
