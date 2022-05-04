@@ -119,12 +119,32 @@
     background: #4075FF;
     border-radius: 10px;
     color: white;
-
-    
     
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+}
+
+
+.create{
+    width: 135px;
+    height: 40px;
+    
+
+    background: rgba(64, 117, 255, 0.1);
+    border: 1px solid #4075FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #4075FF;
 }

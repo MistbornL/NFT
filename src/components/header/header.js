@@ -27,7 +27,13 @@ const Header = () => {
             <div className="artworks">
                 <h1>Collect Super Rare Digital <span>ARTWORKS</span></h1>
                 <p>Buy and sell NFTs from the world’s top artists.</p>
-                <button className='start' type="submit">Get Started</button>
+
+                <div className = "header_buttons" style = {{display: "flex"}}>
+                    <button className='start' type="submit">Get Started</button>
+                    <div style={{width: '20px'}}></div>
+                    <button className='create' type="submit">Create</button>
+                </div>
+                
             </div>
 
             <div className="moon-statue">
