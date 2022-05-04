@@ -60,10 +60,6 @@
     mix-blend-mode: lighten;
 }
 
-/* .moon-statue img{
-    width: 705.77px;
-    height: 576.49px;
-} */
 
 .artworks {
     justify-content:flex-start;
@@ -116,7 +112,7 @@
 }
 
 .start {
-    outline: 0;
+    outline: none;
     width: 135px;
     height: 40px;
     left: 140px;
