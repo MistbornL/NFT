@@ -1,0 +1,42 @@
+.popular {
+    margin-top: 70px;
+    height: 42px;
+    justify-content:flex-start;
+    
+}
+
+.popular h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+
+.popular span {
+    color: #4075FF;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.view_all {
+    width: 105px;
+    height: 35px;
+    left: 1195px;
+    top: 903px;
+
+    background: #4075FF;
+    border: 1px solid #4075FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
