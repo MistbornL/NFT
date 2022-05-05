@@ -2,16 +2,12 @@ import React from 'react'
 import "./index.css"
 import statue from '../../ui/statue.png'
 import heart from '../../ui/heart.png'
+import Popular from './Popular/Popular'
 
 function Main() {
     return (
         <div className="wrapper">
-            <div className="popular">
-                <h1>Most <span>Popular</span></h1>
-                <button className='view_all'>
-                    View All
-                </button>
-            </div>
+            <Popular />
 
 
             <section className='sec'>
