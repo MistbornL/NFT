@@ -124,3 +124,8 @@
     gap: 10px;
     display: flex;
 }
+
+.wrapper section {
+    display: flex;
+    justify-content: space-around;
+}

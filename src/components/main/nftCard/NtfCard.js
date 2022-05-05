@@ -1,23 +1,23 @@
 import React from 'react';
 import './nftCard.css'
-import Statue from '../../../ui/statue.png';
+
 import UserIcon from '../../../ui/elipse.png';
-import nft from '../../../ui/nft.png';
-const NtfCard = () => {
+
+const NtfCard = ({ img, user, title, author, eth, wiladi }) => {
     return (
         <div className='card-wrapper'>
             <div className='card-cover'>
-                <img src={Statue} alt='img' />
+                <img src={img} alt='img' />
             </div>
             <div className='card-body'>
                 <div className='card-body-top'>
                     <img src={UserIcon} alt='icon' />
                     <div className='body-top-left'>
                         <span>
-                            STATUE OF ART
+                            {title}
                         </span>
                         <p>
-                            irakli N
+                            {author}
                         </p>
                     </div>
                     <div className='body-top-right'>
@@ -31,10 +31,10 @@ const NtfCard = () => {
                     </div>
                     <div className='body-mid-bottom'>
                         <span>
-                            <img src={nft} alt='icon' />
-                            0.5656565 ETH
+                            <img src={user} alt='icon' />
+                            {eth}
                         </span>
-                        <span>7/10</span>
+                        <span>{wiladi}</span>
 
                     </div>
 

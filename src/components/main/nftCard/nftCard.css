@@ -4,10 +4,11 @@
     height: 421px;
     background: rgba(56, 84, 142, 0.15);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .card-body {
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .card-body-top {
@@ -33,16 +34,11 @@
 }
 
 .card-body span {
-    width: 119px;
-    height: 24px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height */
-
-
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -66,25 +62,39 @@
     justify-content: space-between;
 }
 
+.card-body-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .body-mid-top span {
-    width: 94px;
-    height: 21px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
-
 
     color: #8884B3;
-
 }
 
 .body-mid-bottom {
+    display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
+}
+
+.body-mid-bottom span:first-child {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.body-mid-bottom span:last-child {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 button {
@@ -97,4 +107,5 @@ button {
     border: 1px solid #4075FF;
     box-sizing: border-box;
     border-radius: 10px;
+    cursor: pointer
 }
