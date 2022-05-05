@@ -48,10 +48,13 @@
     border-radius: 10px;
 }
 
-section {
+.sec {
     display: flex;
     width: 271px;
     height: 421px;
+    background: rgba(56, 84, 142, 0.15);
+    border-radius: 10px;
+
 }
 
 .photo {

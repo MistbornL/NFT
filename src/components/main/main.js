@@ -14,7 +14,7 @@ function Main() {
             </div>
 
 
-            <section>
+            <section className='sec'>
                 <div classname='photo'>
                     <img className='statue' src={statue} alt="statue"></img>
                     <div classname="stat">
