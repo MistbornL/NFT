@@ -3,7 +3,7 @@
     text-align: center;
     margin-left: 93px;
     padding: 0;
-    list-style: none;   
+    list-style: none;
 }
 
 .tuar_daarqvi a {
@@ -17,7 +17,7 @@
     outline: 0
 }
 
-.btn button{
+.btn button {
     width: 150px;
     height: 35px;
     background: rgba(64, 117, 255, 0.3);
@@ -55,14 +55,14 @@
 
 .moon-statue {
     size: 100%;
-    width:620px;
+    width: 620px;
     height: 640px;
     mix-blend-mode: lighten;
 }
 
 
 .artworks {
-    justify-content:flex-start;
+    justify-content: flex-start;
     width: 500px;
     height: 180px;
 }
@@ -74,11 +74,11 @@
     font-size: 50px;
     line-height: 75px;
     color: #FFFFFF;
-    display:inline;
+    display: inline;
 }
 
 
-.artworks p{
+.artworks p {
     width: 307px;
     height: 54px;
     left: 140px;
@@ -121,7 +121,7 @@
     background: #4075FF;
     border-radius: 10px;
     color: white;
-    
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -130,10 +130,10 @@
 }
 
 
-.create{
+.create {
     width: 135px;
     height: 40px;
-    
+
 
     background: rgba(64, 117, 255, 0.1);
     border: 1px solid #4075FF;
@@ -151,7 +151,8 @@
     color: #4075FF;
 }
 
-.info{
+.info {
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,14 +162,14 @@
 }
 
 .box {
-    margin-top:20px;
+    margin-top: 20px;
     margin-left: 40px;
-    width:80px;
+    width: 80px;
     height: 93px;
 }
 
 .box h2 {
-    margin:0;
+    margin: 0;
     width: 74px;
     height: 42px;
     font-family: 'Poppins';
@@ -181,7 +182,7 @@
 
 
 .box h3 {
-    margin:0;
+    margin: 0;
     width: 80px;
     height: 30px;
     font-family: 'Poppins';

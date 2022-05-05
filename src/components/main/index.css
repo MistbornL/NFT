@@ -1,8 +1,11 @@
 .popular {
-    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     height: 42px;
-    justify-content:flex-start;
-    
+    height: 42px;
+    align-items: center;
+
 }
 
 .popular h1 {
@@ -22,14 +25,17 @@
     color: #4075FF;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     max-width: 1440px;
+    display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .view_all {
+    font-family: 'Poppins';
+    color: #FFFFFF;
     width: 105px;
     height: 35px;
     left: 1195px;
@@ -39,4 +45,8 @@
     border: 1px solid #4075FF;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.poppins {
+    font-family: 'Poppins'
 }
