@@ -1,0 +1,100 @@
+.card-wrapper {
+    margin-top: 44px;
+    width: 271px;
+    height: 421px;
+    background: rgba(56, 84, 142, 0.15);
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body-top {
+    /* height: 43px; */
+    gap: 10px;
+    display: flex;
+}
+
+.card-body-top img {
+    width: 45px;
+    height: 45px;
+}
+
+.body-top-left p {
+    margin: 0;
+}
+
+
+
+.card-body-top-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body span {
+    width: 119px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.card-body p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+
+
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.body-mid-top {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.body-mid-top span {
+    width: 94px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #8884B3;
+
+}
+
+.body-mid-bottom {
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    margin-top: 28px;
+    width: 249px;
+    height: 35px;
+
+    background-color: rgba(56, 84, 142, 0.15);
+    color: white;
+    border: 1px solid #4075FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}

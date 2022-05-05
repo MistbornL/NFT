@@ -3,36 +3,34 @@ import "./index.css"
 import statue from '../../ui/statue.png'
 import heart from '../../ui/heart.png'
 import Popular from './Popular/Popular'
-import elipse from '../../ui/elipse.png'
+import nft from '../../ui/nft.png'
+
+import Logontxt from './logontxt/Logontxt'
+import { Priceavailable } from './priceavailable/Priceavailable'
+import NtfCard from './nftCard/NtfCard'
 
 function Main() {
+    const style = {
+        width: "94px",
+        height: "21px",
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: '600',
+        fontSize: '14px',
+        lineHeight: '30px',
+        /* identical to box height */
+
+
+        color: '#8884B3'
+    }
+
+
     return (
         <div className="wrapper">
             <Popular />
+            <NtfCard />
 
 
-            <section className='sec'>
-                <div classname='photo'>
-                    <img className='statue' src={statue} alt="statue"></img>
-                    {/* <div classname="stat">
-                        <img className='heart' src={heart} alt='heart'></img>
-                        <p>97</p>
-                    </div> */}
-                </div>
-
-                <div className='auf'>
-                    <div style={{ alignItems: 'center' }}>
-                        <img src={elipse} style={{ width: '45px', height: '45px' }}></img>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', }} className="">
-
-                        <h1 style={{ margin: '0' }}>STATUE OF ART</h1>
-                        <p>irakli N</p>
-                    </div>
-                </div>
-
-
-            </section>
         </div>
     )
 }
