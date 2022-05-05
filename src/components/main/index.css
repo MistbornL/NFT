@@ -26,9 +26,10 @@
 }
 
 .wrapper {
+    height: auto;
     width: 100%;
     max-width: 1440px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     margin: auto;
 }
@@ -47,6 +48,38 @@
     border-radius: 10px;
 }
 
-.poppins {
-    font-family: 'Poppins'
+section {
+    display: flex;
+    width: 271px;
+    height: 421px;
+}
+
+.photo {
+    width: 271px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.statue {
+    position: absolute;
+    width: 271px;
+    height: 200px;
+}
+
+.stat {
+    width: 57px;
+    height: 25px;
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 2px;
+}
+
+.heart {
+    left: 8.34%;
+    right: 8.33%;
+    top: 12.5%;
+    bottom: 11.04%;
+    position: relative;
 }

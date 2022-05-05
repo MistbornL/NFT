@@ -9,14 +9,13 @@ const Home = () => {
     return (
         <>
             <div className="wrap">
-                <Header/>
-                <div className="line"/>   
+                <Header />
+                <div className="line" />
             </div>
             <Info />
-
             <Main />
         </>
-        
+
 
     )
 }
