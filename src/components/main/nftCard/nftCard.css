@@ -109,3 +109,18 @@ button {
     border-radius: 10px;
     cursor: pointer
 }
+
+.card-cover span {
+    width: 15px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
