@@ -12,7 +12,7 @@ function Main({ item }) {
     return (
         <div className="wrapper">
             <Popular />
-            <section style={{ marginBottom: '73px' }}>
+            <section style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '73px' }}>
                 {
                     NFT_CARDS.map(item => (
                         <NtfCard item={item} key={item.id} />
@@ -27,7 +27,7 @@ function Main({ item }) {
                 </button>
             </div>
 
-            <section>
+            <section className='middleel'>
                 {
                     NFT_CARDS.map(item => (
                         <TopSellers item={item} key={item.id} />

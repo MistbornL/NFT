@@ -125,10 +125,10 @@
     display: flex;
 }
 
-.wrapper section {
+/* .wrapper section {
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .sellers {
     width: 154px;
@@ -149,4 +149,14 @@
 
 .sellers span {
     color: #4075FF;
+}
+
+.middleel {
+    display: grid;
+    justify-items: center;
+    width: 1440px;
+    background: linear-gradient(89.98deg, rgba(40, 65, 130, 0.05) 3.28%, rgba(109, 33, 102, 0.05) 99.98%);
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
 }

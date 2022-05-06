@@ -46,7 +46,20 @@ const NFT_CARDS = [
         price: 17.56,
         raiting: '9/10',
         currency: 'ETH'
-    }
+    },
+    {
+        id: 5,
+        coverImg: '/assets/images/Rectangle-35.png',
+        liked: false,
+        numberOfLikes: 92,
+        title: 'Virus K495',
+        userIcon: '/assets/images/elipse.png',
+        user: 'Irakli N',
+        price: 17.56,
+        raiting: '9/10',
+        currency: 'ETH'
+    },
+
 ]
 
 export default NFT_CARDS
