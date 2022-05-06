@@ -6,6 +6,7 @@ import Popular from './Popular/Popular'
 import NtfCard from './nftCard/NtfCard'
 import NFT_CARDS from '../../dummyData/data'
 import { TopSellers } from './top_sellers_section/TopSellers'
+import Data from '../../dummyData/second_data'
 
 
 function Main({ item }) {
@@ -29,7 +30,7 @@ function Main({ item }) {
 
             <section className='middleel'>
                 {
-                    NFT_CARDS.map(item => (
+                    Data.map(item => (
                         <TopSellers item={item} key={item.id} />
                     ))
                 }

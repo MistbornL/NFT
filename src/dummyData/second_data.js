@@ -1,4 +1,4 @@
-const NFT_CARDS = [
+const Data = [
     {
         id: 1,
         coverImg: '/assets/images/statue.png',
@@ -59,7 +59,43 @@ const NFT_CARDS = [
         raiting: '9/10',
         currency: 'ETH'
     },
+    {
+        id: 6,
+        coverImg: '/assets/images/Rectangle-35.png',
+        liked: false,
+        numberOfLikes: 92,
+        title: 'Virus K495',
+        userIcon: '/assets/images/elipse.png',
+        user: 'Irakli N',
+        price: 17.56,
+        raiting: '9/10',
+        currency: 'ETH'
+    },
+    {
+        id: 7,
+        coverImg: '/assets/images/Rectangle-35.png',
+        liked: false,
+        numberOfLikes: 92,
+        title: 'Virus K495',
+        userIcon: '/assets/images/elipse.png',
+        user: 'Irakli N',
+        price: 17.56,
+        raiting: '9/10',
+        currency: 'ETH'
+    },
+    {
+        id: 8,
+        coverImg: '/assets/images/Rectangle-35.png',
+        liked: false,
+        numberOfLikes: 92,
+        title: 'Virus K495',
+        userIcon: '/assets/images/elipse.png',
+        user: 'Irakli N',
+        price: 17.56,
+        raiting: '9/10',
+        currency: 'ETH'
+    },
 
 ]
 
-export default NFT_CARDS
+export default Data;

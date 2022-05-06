@@ -152,6 +152,7 @@
 }
 
 .middleel {
+    margin-top: 50px;
     display: grid;
     justify-items: center;
     width: 1440px;
