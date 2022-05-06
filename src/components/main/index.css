@@ -129,3 +129,24 @@
     display: flex;
     justify-content: space-around;
 }
+
+.sellers {
+    width: 154px;
+    height: 42px;
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+
+}
+
+.sellers span {
+    color: #4075FF;
+}

@@ -1,44 +1,52 @@
 import React from 'react';
 import './nftCard.css'
-import heart from '../../../ui/heart.svg'
+import { ReactComponent as Heart } from '../../../ui/heart.svg'
 import { useState } from 'react';
-import UserIcon from '../../../ui/elipse.png';
+import NFT_CARDS from '../../../dummyData/data';
 
-const NtfCard = ({ img, user, title, author, eth, wiladi }) => {
-    var number = 0
-    const [like, setLike] = useState(number)
-    const [color, setColor] = useState({ color: 'white' })
 
-    const onClick = () => {
-        setColor({ color: '#ff4646' });
-        if (color == '#ff4646') {
-            setLike(number += 1)
-        }
-        else {
-            setLike(number -= 1)
-        }
-        console.log(like)
+const NtfCard = ({ item }) => {
+
+
+
+    const handleLIke = (id) => {
+        console.log(id)
+        let temparray = [...NFT_CARDS];
+        temparray.map(item => {
+            console.log(item)
+            if (item.liked && item.id === id) {
+                item.liked = false;
+                item.numberOfLikes -= 1
+            } else {
+                item.liked = true;
+                item.numberOfLikes += 1
+            }
+
+            return item;
+        })
+
+        NFT_CARDS = temparray;
     }
     return (
         <div className='card-wrapper'>
             <div className='card-cover'>
-                <img src={img} alt='img' />
-                <div style={{ gap: '10px', display: 'flex', position: 'absolute', marginTop: '-35px', marginLeft: '204px', alignItems: 'center' }}>
-                    <img onClick={onClick} style={{ height: '100%', color: { color } }} src={heart}></img>
-                    <span style={{ color: 'white', width: '15px', height: '18px', fontFamily: 'Poppins' }}>97</span>
+                <img src={item.coverImg} alt='img' />
+                <div style={{ gap: '10px', display: 'flex', position: 'absolute', marginTop: '-35px', marginLeft: '204px', alignItems: 'center', zIndex: 10 }}>
+                    <Heart onClick={() => handleLIke(item.id)} fill={item.liked ? '#ff4646' : '#FFFFFF'} />
+                    <span style={{ color: 'white', width: '15px', height: '18px', fontFamily: 'Poppins' }}>{item.numberOfLikes}</span>
                 </div>
             </div>
 
 
             <div className='card-body'>
                 <div className='card-body-top'>
-                    <img src={UserIcon} alt='icon' />
+                    <img src={item.coverImg} alt='icon' />
                     <div className='body-top-left'>
                         <span>
-                            {title}
+                            {item.title}
                         </span>
                         <p>
-                            {author}
+                            {item.user}
                         </p>
                     </div>
                     <div className='body-top-right'>
@@ -52,10 +60,10 @@ const NtfCard = ({ img, user, title, author, eth, wiladi }) => {
                     </div>
                     <div className='body-mid-bottom'>
                         <span>
-                            <img src={user} alt='icon' />
-                            {eth}
+                            <img src={item.userIcon} alt='icon' />
+                            {item.price} {item.currency}
                         </span>
-                        <span>{wiladi}</span>
+                        <span>{item.raiting}</span>
 
                     </div>
 
