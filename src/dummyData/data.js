@@ -5,7 +5,7 @@ const NFT_CARDS = [
         liked: false,
         numberOfLikes: 87,
         title: 'STATUE OF ART',
-        userIcon: '/assets/images/elipse.png',
+        userIcon: '/assets/images/Rectangle-32.png',
         user: 'Irakli N',
         price: 0.56236,
         raiting: '7/10',

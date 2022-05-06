@@ -2,15 +2,17 @@ import React from 'react'
 import "./index.css"
 import Popular from './Popular/Popular'
 
+
 import NtfCard from './nftCard/NtfCard'
 import NFT_CARDS from '../../dummyData/data'
+import { TopSellers } from './top_sellers_section/TopSellers'
 
 
-function Main() {
+function Main({ item }) {
     return (
         <div className="wrapper">
             <Popular />
-            <section >
+            <section style={{ marginBottom: '73px' }}>
                 {
                     NFT_CARDS.map(item => (
                         <NtfCard item={item} key={item.id} />
@@ -18,9 +20,22 @@ function Main() {
                 }
             </section>
 
-            <div className='sellers'>
+            <div className='popular'>
                 <h1>Top <span>Sellers</span></h1>
+                <button className='view_all'>
+                    View All
+                </button>
             </div>
+
+            <section>
+                {
+                    NFT_CARDS.map(item => (
+                        <TopSellers item={item} key={item.id} />
+                    ))
+                }
+
+            </section>
+
 
         </div>
     )
