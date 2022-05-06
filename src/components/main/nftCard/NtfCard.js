@@ -1,16 +1,30 @@
 import React from 'react';
 import './nftCard.css'
-import heart from '../../../ui/heart.png'
-
+import heart from '../../../ui/heart.svg'
+import { useState } from 'react';
 import UserIcon from '../../../ui/elipse.png';
 
 const NtfCard = ({ img, user, title, author, eth, wiladi }) => {
+    var number = 0
+    const [like, setLike] = useState(number)
+    const [color, setColor] = useState({ color: 'white' })
+
+    const onClick = () => {
+        setColor({ color: '#ff4646' });
+        if (color == '#ff4646') {
+            setLike(number += 1)
+        }
+        else {
+            setLike(number -= 1)
+        }
+        console.log(like)
+    }
     return (
         <div className='card-wrapper'>
             <div className='card-cover'>
                 <img src={img} alt='img' />
-                <div style={{ gap: '10px', display: 'flex', position: 'absolute', marginTop: '-25px', marginLeft: '204px' }}>
-                    <img style={{ height: '100%' }} src={heart}></img>
+                <div style={{ gap: '10px', display: 'flex', position: 'absolute', marginTop: '-35px', marginLeft: '204px', alignItems: 'center' }}>
+                    <img onClick={onClick} style={{ height: '100%', color: { color } }} src={heart}></img>
                     <span style={{ color: 'white', width: '15px', height: '18px', fontFamily: 'Poppins' }}>97</span>
                 </div>
             </div>
