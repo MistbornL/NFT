@@ -1,24 +1,22 @@
+import { Footer } from "../components/footer/Footer";
 import Header from "../components/header/header";
 import Info from "../components/header/info";
 import Main from "../components/main/main";
-import "./index.css"
 
-
+import "./index.css";
 
 const Home = () => {
-    return (
-        <>
-            <div className="wrap">
-                <Header />
-                <div className="line" />
-            </div>
-            <Info />
-            <Main />
-        </>
-
-
-    )
-}
-
+  return (
+    <>
+      <div className="wrap">
+        <Header />
+        <div className="line" />
+      </div>
+      <Info />
+      <Main />
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

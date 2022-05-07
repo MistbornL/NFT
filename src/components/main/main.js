@@ -7,6 +7,8 @@ import NFT_CARDS from "../../dummyData/data";
 import { TopSellers } from "./top_sellers_section/TopSellers";
 import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
+import Explore from "../../dummyData/explore_data";
+import { resolvePath } from "react-router-dom";
 
 function Main({ item }) {
   return (
@@ -63,6 +65,14 @@ function Main({ item }) {
         </div>
       </div>
       <Popular first_word="Explore" second_word="Artworks" />
+
+      <section
+        style={{ display: "grid", gridTemplateColumns: "repeat(4,  1fr) " }}
+      >
+        {Explore.map((item) => (
+          <NtfCard item={item} key={item.id} />
+        ))}
+      </section>
     </div>
   );
 }
