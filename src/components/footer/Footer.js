@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className="footer-title">
           <h1>Marketplace</h1>
         </div>
-        <div>
+        <div className="raw">
           <p>Explore</p>
           <p>Collectibles</p>
           <p>All NFTs</p>
@@ -30,25 +30,25 @@ export const Footer = () => {
 
       <div className="footer-middle">
         <div className="footer-title">
-          <h1></h1>
+          <h1>Marketplace</h1>
         </div>
-        <div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <div className="raw">
+          <p>Explore</p>
+          <p>Collectibles</p>
+          <p>All NFTs</p>
+          <p>Virtual World</p>
         </div>
       </div>
 
       <div className="footer-middle">
         <div className="footer-title">
-          <h1></h1>
+          <h1>Marketplace</h1>
         </div>
-        <div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <div className="raw">
+          <p>Explore</p>
+          <p>Collectibles</p>
+          <p>All NFTs</p>
+          <p>Virtual World</p>
         </div>
       </div>
 
