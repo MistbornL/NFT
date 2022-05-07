@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Popular() {
-    return (
-        <div className="popular">
-            <h1>Most <span>Popular</span></h1>
-            <button className='view_all'>
-                View All
-            </button>
-        </div>
-    )
+function Popular({ first_word, second_word }) {
+  return (
+    <div className="popular">
+      <h1>
+        {first_word} <span>{second_word}</span>
+      </h1>
+      <button className="view_all">View All</button>
+    </div>
+  );
 }
 
-export default Popular
+export default Popular;

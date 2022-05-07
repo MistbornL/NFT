@@ -154,11 +154,23 @@
   row-gap: 20px;
 }
 
+.about {
+  margin: 38px auto;
+}
+
 .sec {
   display: flex;
 }
 
+.desc {
+  padding: 50px;
+  background: #111d25;
+  border-radius: 0px 10px 10px 0px;
+}
+
 .desc p {
+  width: 100%;
+
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
