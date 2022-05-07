@@ -42,6 +42,16 @@ function Main({ item }) {
         </h1>
         <button className="view_all">View All</button>
       </div>
+
+      <div className="about">
+        <div className="img">
+          <img></img>
+        </div>
+
+        <div className="desc">
+          <p></p>
+        </div>
+      </div>
     </div>
   );
 }
