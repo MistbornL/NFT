@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+import triangle from "../../../ui/Vector.svg";
+
 export const TopSellers = ({ item }) => {
   return (
     <div className="section-top">
@@ -12,7 +14,9 @@ export const TopSellers = ({ item }) => {
               <p>{item.user}</p>
             </div>
             <div className="rate">
-              <span>a</span>
+              <span>
+                <img src={triangle} />
+              </span>
               <span>1.25 %</span>
             </div>
           </li>

@@ -60,3 +60,8 @@
 
   color: #ff4646;
 }
+
+.rate img {
+  width: 10px;
+  height: 5px;
+}
