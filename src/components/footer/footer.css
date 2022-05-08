@@ -59,6 +59,7 @@
 }
 
 .footer {
+  padding: 33px;
   display: flex;
   justify-content: center;
   gap: 38px;
@@ -100,10 +101,4 @@
 
 .footer-title input:placeholder-shown {
   color: white;
-}
-
-.linee {
-  width: 920px;
-  height: 1px;
-  background: #363636;
 }

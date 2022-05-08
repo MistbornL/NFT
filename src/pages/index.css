@@ -1,36 +1,40 @@
 .wrap {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 p {
-    width: 46px;
-    height: 23px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
+  width: 46px;
+  height: 23px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
 
-
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 ul li {
-    font-family: 'Poppins';
-    font-style: normal;
+  font-family: "Poppins";
+  font-style: normal;
 }
 
 .line {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0px;
-    top: 85px;
-    background: #ffffff;
-    opacity: 29%;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  top: 85px;
+  background: #ffffff;
+  opacity: 29%;
+}
+
+.linee {
+  width: 920px;
+  height: 1px;
+  background: #363636;
 }
