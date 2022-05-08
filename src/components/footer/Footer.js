@@ -55,8 +55,8 @@ export const Footer = () => {
       <div className="footer-right">
         <div className="footer-title">
           <h1>Receive Latest Updates</h1>
-          <input placeholder="Email"></input>
-          <button></button>
+          <input placeholder="Email Address"></input>
+          <button>Subscribe</button>
         </div>
       </div>
     </div>

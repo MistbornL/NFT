@@ -84,3 +84,16 @@
   width: 289px;
   height: 44px;
 }
+
+.footer-title button {
+  width: 111px;
+  height: 44px;
+  outline: none;
+
+  background: #4075ff;
+  border-radius: 10px;
+}
+
+.footer-title input:placeholder-shown {
+  color: white;
+}
