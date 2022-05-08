@@ -29,7 +29,9 @@
 }
 
 .footer-middle {
-  width: 100%;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-title h1 {
@@ -62,4 +64,23 @@
   flex-direction: column;
   gap: 7px;
   height: 21px;
+}
+
+.footer-right {
+  margin-left: 83px;
+  display: flex;
+  flex-direction: column;
+  height: 149px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title input {
+  background: rgba(73, 86, 106, 0.35);
+  border-radius: 10px;
+  width: 289px;
+  height: 44px;
 }
