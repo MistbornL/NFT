@@ -67,7 +67,11 @@ function Main({ item }) {
       <Popular first_word="Explore" second_word="Artworks" />
 
       <section
-        style={{ display: "grid", gridTemplateColumns: "repeat(4,  1fr) " }}
+        style={{
+          marginBottom: "100px",
+          display: "grid",
+          gridTemplateColumns: "repeat(4,  1fr)",
+        }}
       >
         {Explore.map((item) => (
           <NtfCard item={item} key={item.id} />
