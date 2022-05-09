@@ -1,18 +1,32 @@
 .footer-left-bottom {
+  flex-direction: column;
   display: flex;
 }
 
+.footer-logo {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-logo img {
+  width: 24px;
+  height: 24px;
+
+}
+
+
 .footer-left-bottom p {
-  height: 52px;
-  width: 187px;
-  font-family: "Poppins";
+  height: 82px;
+  width: 275px;
+
+  font-family: 'Poppins';
   font-style: normal;
-  height: 52px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 
-  color: #c1c1c1;
+  color: #C1C1C1;
+
 }
 
 .footer title {
@@ -21,9 +35,14 @@
 }
 
 .footer-middle {
+  gap: 20px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
+}
+
+.footer-title {
+  gap: 17px;
 }
 
 .footer-title h1 {
@@ -64,9 +83,7 @@
   justify-content: center;
   gap: 38px;
   height: 200px;
-  max-width: 100%;
   margin-top: -70px;
-  /* align-items: center; */
   margin: auto;
   background-color: #111d25;
 }

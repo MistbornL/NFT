@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../ui/logo.svg";
+import Elipse from "../../ui/elipse.png";
 import "./footer.css";
 
 export const Footer = () => {
@@ -13,6 +14,12 @@ export const Footer = () => {
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
             exclusive digital items.
           </p>
+          <div className='footer-logo'>
+            <img src={Elipse}></img>
+            <img src={Elipse}></img>
+            <img src={Elipse}></img>
+            <img src={Elipse}></img>
+          </div>
         </div>
       </div>
 
