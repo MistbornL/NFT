@@ -1,3 +1,14 @@
+.footer {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  height: max-content;
+  margin-top: -70px;
+  margin: auto;
+  background-color: #111d25;
+}
+
 .footer-left-bottom {
   flex-direction: column;
   display: flex;
@@ -77,16 +88,7 @@
   height: 21px;
 }
 
-.footer {
-  padding: 33px;
-  display: flex;
-  justify-content: center;
-  gap: 38px;
-  height: 200px;
-  margin-top: -70px;
-  margin: auto;
-  background-color: #111d25;
-}
+
 
 .footer-right {
   margin-left: 83px;
@@ -118,4 +120,28 @@
 
 .footer-title input:placeholder-shown {
   color: white;
+}
+
+.linee {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  position: absolute;
+  width: 920px;
+  height: 1px;
+  background: #363636;
+}
+
+.linee p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  color: rgba(255, 255, 255, 0.6);
+
+
 }

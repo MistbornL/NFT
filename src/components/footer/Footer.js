@@ -66,6 +66,10 @@ export const Footer = () => {
           <button>Subscribe</button>
         </div>
       </div>
+      <div className='linee'>
+        <div style={{ alignItems: 'center', textAlign: 'center', padding: '20px' }}><p style={{ display: 'contents', alignItems: 'center' }}>Copyright © 2022 CUBE | NFT Marketplace Template Kit. Designed by
+          Irakli Tchekhani</p></div>
+      </div>
     </div>
   );
 };
