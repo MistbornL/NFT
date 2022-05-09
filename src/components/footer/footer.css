@@ -22,27 +22,27 @@
 .footer-logo img {
   width: 24px;
   height: 24px;
-
 }
-
 
 .footer-left-bottom p {
   height: 82px;
   width: 275px;
 
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 
-  color: #C1C1C1;
-
+  color: #c1c1c1;
 }
 
 .footer title {
   width: 103px;
   height: 24px;
+}
+
+.footer title input {
 }
 
 .footer-middle {
@@ -62,7 +62,6 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
 
   color: #ffffff;
 }
@@ -76,7 +75,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
 
   color: rgba(251, 253, 255, 0.7);
 }
@@ -87,8 +85,6 @@
   gap: 7px;
   height: 21px;
 }
-
-
 
 .footer-right {
   margin-left: 83px;
@@ -133,15 +129,12 @@
 }
 
 .linee p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* identical to box height */
 
-
   color: rgba(255, 255, 255, 0.6);
-
-
 }

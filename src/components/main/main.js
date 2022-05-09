@@ -9,7 +9,6 @@ import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
 import Explore from "../../dummyData/explore_data";
-import { resolvePath } from "react-router-dom";
 
 function Main({ item }) {
   return (
@@ -43,7 +42,18 @@ function Main({ item }) {
 
       <div className="about" style={{ display: "flex" }}>
         <div className="img">
-          <div style={{ display: 'flex', justifyContent: 'center', width: '580px', height: '344px', position: 'absolute', alignItems: 'center' }}><img style={{ position: 'absolute' }} src={Play} /></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: "580px",
+              height: "344px",
+              position: "absolute",
+              alignItems: "center",
+            }}
+          >
+            <img style={{ position: "absolute" }} src={Play} />
+          </div>
 
           <img src={aboutImg}></img>
         </div>
