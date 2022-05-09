@@ -2,7 +2,7 @@
   padding: 80px;
   display: flex;
   justify-content: center;
-  gap: 38px;
+  gap: 36px;
   height: max-content;
   margin-top: -70px;
   margin: auto;
@@ -53,7 +53,7 @@
 }
 
 .footer-title {
-  gap: 17px;
+  gap: 12px;
 }
 
 .footer-title h1 {
