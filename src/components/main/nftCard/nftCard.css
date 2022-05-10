@@ -104,6 +104,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #4075FF;
+  ;
+}
+
 .card-cover span {
   width: 15px;
   height: 18px;

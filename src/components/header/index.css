@@ -13,6 +13,10 @@
   color: #fff;
 }
 
+.tuar_daarqvi a:hover {
+  color: #4075FF
+}
+
 .search {
   display: flex;
   width: 380px;
@@ -106,12 +110,10 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 75px;
-  background: linear-gradient(
-    89.89deg,
-    #4075ff 37.7%,
-    #4075ff 37.7%,
-    #ff00e5 98.05%
-  );
+  background: linear-gradient(89.89deg,
+      #4075ff 37.7%,
+      #4075ff 37.7%,
+      #ff00e5 98.05%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -167,11 +169,9 @@
   align-items: center;
   width: 100%;
   padding: 1px;
-  background: linear-gradient(
-    89.98deg,
-    rgba(40, 65, 130, 0.2) 3.28%,
-    rgba(109, 33, 102, 0.2) 99.98%
-  );
+  background: linear-gradient(89.98deg,
+      rgba(40, 65, 130, 0.2) 3.28%,
+      rgba(109, 33, 102, 0.2) 99.98%);
 }
 
 .box {
