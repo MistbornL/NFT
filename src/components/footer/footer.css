@@ -42,8 +42,7 @@
   height: 24px;
 }
 
-.footer title input {
-}
+.footer title input {}
 
 .footer-middle {
   gap: 20px;
@@ -99,6 +98,7 @@
 }
 
 .footer-title input {
+  border-bottom: none;
   background: rgba(73, 86, 106, 0.35);
   border-radius: 10px;
   width: 289px;
