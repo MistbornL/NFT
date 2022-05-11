@@ -25,10 +25,10 @@ function Main({ item }) {
         }}
       >
         {NFT_CARDS.map((item) => (
-          <Link to={`/Nft-card/${item.id}`} key={item.id}>
 
-            <NtfCard item={item} />
-          </Link>
+
+          <NtfCard item={item} />
+
         ))}
       </section>
 

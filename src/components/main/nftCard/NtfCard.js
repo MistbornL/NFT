@@ -28,7 +28,9 @@ const NtfCard = ({ item }) => {
   return (
     <div className="card-wrapper">
       <div className="card-cover">
-        <img src={item.coverImg} alt="img" />
+        <Link to={`/Nft-card/${item.id}`} key={item.id}>
+          <img src={item.coverImg} alt="img" />
+        </Link>
         <div
           style={{
             width: '60px',
