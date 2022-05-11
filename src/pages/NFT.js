@@ -153,8 +153,8 @@ export const NFT = () => {
           </div>
         </div>
       </div>
-        
-        <Popular first_word='Similar' second_word='Projects'
+
+      <Popular first_word="Similar" second_word="Projects" />
       <section>
         {NFT_CARDS.map((item) => (
           <NtfCard item={item} />
