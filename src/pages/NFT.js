@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import "../components/header/index.css";
 import { Menu } from "../components/header/Menu";
 import NtfCard from "../components/main/nftCard/NtfCard";
+import Popular from "../components/main/Popular/Popular";
 
 export const NFT = () => {
   const params = useParams();
@@ -152,7 +153,8 @@ export const NFT = () => {
           </div>
         </div>
       </div>
-
+        
+        <Popular first_word='Similar' second_word='Projects'
       <section>
         {NFT_CARDS.map((item) => (
           <NtfCard item={item} />
