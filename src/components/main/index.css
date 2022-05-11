@@ -138,11 +138,9 @@
   display: grid;
   justify-items: center;
   width: 1440px;
-  background: linear-gradient(
-    89.98deg,
-    rgba(40, 65, 130, 0.05) 3.28%,
-    rgba(109, 33, 102, 0.05) 99.98%
-  );
+  background: linear-gradient(89.98deg,
+      rgba(40, 65, 130, 0.05) 3.28%,
+      rgba(109, 33, 102, 0.05) 99.98%);
   justify-content: space-between;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 20px;
@@ -174,4 +172,9 @@
   text-align: justify;
 
   color: rgba(255, 255, 255, 0.9);
+}
+
+.desc h1 {
+  width: 105px;
+  height: 27px;
 }
