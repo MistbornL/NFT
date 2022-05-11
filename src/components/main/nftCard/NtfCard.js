@@ -30,6 +30,12 @@ const NtfCard = ({ item }) => {
         <img src={item.coverImg} alt="img" />
         <div
           style={{
+            width: '60px',
+            height: '25px',
+            justifyContent: 'center',
+            background: 'gba(50, 50, 50, 0.2)',
+            backdropFilter: 'blur(15px)',
+            borderRadius: '2px',
             gap: "10px",
             display: "flex",
             position: "absolute",

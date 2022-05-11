@@ -9,11 +9,14 @@ import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
 import Explore from "../../dummyData/explore_data";
+import { Routes, Route, Link } from "react-router-dom";
+
 
 function Main({ item }) {
   return (
     <div className="wrapper">
       <Popular first_word="Most" second_word="Popular" />
+
       <section
         style={{
           display: "flex",
@@ -25,6 +28,7 @@ function Main({ item }) {
           <NtfCard item={item} key={item.id} />
         ))}
       </section>
+
 
       <Popular first_word="Top" second_word="Sellers" />
 
