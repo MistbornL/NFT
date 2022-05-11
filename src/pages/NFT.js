@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import NFT_CARDS from '../dummyData/data';
 import { useParams } from "react-router-dom";
+import Header from '../components/header/header';
+import '../components/header/index.css'
 
 export const NFT = () => {
     const params = useParams();
@@ -17,6 +19,9 @@ export const NFT = () => {
     console.log(singleCard)
 
     return (
-        <div>NFT</div>
+        <div className="wrap">
+            <Header />
+        </div>
+
     )
 }
