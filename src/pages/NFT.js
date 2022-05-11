@@ -3,6 +3,7 @@ import NFT_CARDS from "../dummyData/data";
 import { useParams } from "react-router-dom";
 import "../components/header/index.css";
 import { Menu } from "../components/header/Menu";
+import NtfCard from "../components/main/nftCard/NtfCard";
 
 export const NFT = () => {
   const params = useParams();
@@ -11,8 +12,8 @@ export const NFT = () => {
   const [singleCard, setSingleCard] = useState();
 
   useEffect(() => {
-    let x = NFT_CARDS.filter((c) => c.id == params.id)[0];
-    setSingleCard(x);
+    let card = NFT_CARDS.filter((c) => c.id == params.id)[0];
+    setSingleCard(card);
   }, []);
 
   console.log(singleCard);
@@ -30,39 +31,50 @@ export const NFT = () => {
           marginTop: "79px",
         }}
       >
-        {/* <img style={{ width: "100%" }} src={singleCard.coverImg}></img> */}
+        <img style={{ width: "100%" }} src={singleCard.coverImg}></img>
       </div>
-
       <div className="description-card">
         <div className="description-top">
-          <h1></h1>
-          <div></div>
-          <div></div>
-          <div></div>
+          <h1>{singleCard.title}</h1>
+          <div>
+            <img></img>
+            <p>189k</p>
+          </div>
+          <div>
+            <img />
+            <p>{singleCard.numberOfLikes}</p>
+          </div>
+          <div>
+            <img />
+          </div>
         </div>
-        <div>
-          <p></p>
+        <div className="owner">
+          <p>
+            Owner <span>Humanin</span>
+          </p>
         </div>
         <div className="line-for-description-card"></div>
 
         <div className="bid-countdown">
-          <p></p>
-          <p></p>
+          <p>Current Bid</p>
+          <p>Countdown</p>
         </div>
 
         <div className="description-main">
           <img></img>
           <div>
             <h1>
-              <span></span>
+              <span>
+                {setSingleCard.price} {singleCard.currency} = $ 444
+              </span>
             </h1>
-            <p></p>
+            <p>...</p>
           </div>
         </div>
 
         <div className="description-footer">
-          <button></button>
-          <button></button>
+          <button>Buy Now</button>
+          <button>Place Bid</button>
         </div>
       </div>
 
@@ -140,6 +152,12 @@ export const NFT = () => {
           </div>
         </div>
       </div>
+
+      <section>
+        {NFT_CARDS.map((item) => (
+          <NtfCard item={item} />
+        ))}
+      </section>
     </div>
   );
 };
