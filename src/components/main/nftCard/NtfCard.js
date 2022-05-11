@@ -4,6 +4,7 @@ import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
 import { useState } from "react";
 import NFT_CARDS from "../../../dummyData/data";
+import { Link } from "react-router-dom";
 
 const NtfCard = ({ item }) => {
   // const handleLIke = (id) => {
