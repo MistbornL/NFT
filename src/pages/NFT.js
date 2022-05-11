@@ -154,6 +154,8 @@ export const NFT = () => {
         </div>
       </div>
 
+      <div className="history"></div>
+
       <Popular first_word="Similar" second_word="Projects" />
       <section>
         {NFT_CARDS.map((item) => (
