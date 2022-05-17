@@ -8,6 +8,7 @@ import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
+
 export const NFT = () => {
   const params = useParams();
   console.log(params);
@@ -32,7 +33,6 @@ export const NFT = () => {
               display: "flex",
               width: "448px",
               height: "445px",
-              marginTop: "79px",
             }}
           >
             <img style={{ width: "100%" }} src={singleCard.coverImg}></img>
@@ -68,18 +68,23 @@ export const NFT = () => {
             </div>
 
             <div className="description-main">
-              <img src={nft}></img>
-              <div>
-                <h1>
-                  <span>
-                    {setSingleCard.price} {singleCard.currency} = $ 444
-                  </span>
-                </h1>
-                <p>...</p>
-              </div>
+              <h1
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <img src={nft}></img>
+                {setSingleCard.price} {singleCard.currency}
+                <span> = $ 44440.62 </span>
+              </h1>
+              <h1>
+                32
+                <span>days</span>
+              </h1>
             </div>
 
-            <div className="description-footer">
+            <div
+              className="description-footer"
+              style={{ display: "flex", gap: "30px" }}
+            >
               <button>Buy Now</button>
               <button>Place Bid</button>
             </div>
