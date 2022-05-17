@@ -40,18 +40,21 @@ export const NFT = () => {
         <div className="description-card">
           <div className="description-top">
             <h1>{singleCard.title}</h1>
-            <div>
-              <img></img>
-              <p>189k</p>
-            </div>
-            <div>
-              <img />
-              <p>{singleCard.numberOfLikes}</p>
-            </div>
-            <div>
-              <img />
+            <div className="description-top-right">
+              <div>
+                <img></img>
+                <p>189k</p>
+              </div>
+              <div>
+                <img />
+                <p>{singleCard.numberOfLikes}</p>
+              </div>
+              <div>
+                <img />
+              </div>
             </div>
           </div>
+
           <div className="owner">
             <p>
               Owner <span>Humanin</span>

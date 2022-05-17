@@ -80,3 +80,74 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
+
+.description-top {
+  text-align: center;
+  align-items: center;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-top h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.description-top-right {
+  text-align: center;
+  display: flex;
+}
+
+.description-top-right div > p {
+  font-family: "Poppins";
+  font-style: normal;
+  background: #19252d;
+  border-radius: 10px;
+  width: 61px;
+}
+
+.description-card {
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+
+.owner p {
+  display: flex;
+  gap: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #a2a2a2;
+}
+
+.owner span {
+  color: rgba(64, 117, 255, 0.4);
+}
+
+.bid-countdown {
+  border-top: solid #1d2931;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bid-countdown p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #a2a2a2;
+}
