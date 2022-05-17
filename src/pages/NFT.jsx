@@ -91,24 +91,63 @@ export const NFT = () => {
           </div>
         </div>
 
-        <div className="description">
-          <h1>Description</h1>
-          <div className="line-for-div"></div>
-          <div className="scroll">
-            <p>
-              We can predict in advance the main argument of the critics - a
-              housewife cannot be considered a real professional in each of the
-              listed areas! But we do not argue with this, because the
-              activities of a housewife include the skills of almost all of the
-              listed professions. But that's not all - a housewife is a mother
-              who tries her best to raise future worthy members of society, and
-              does it on her own, without resorting to the help of surrogate
-              mothers, whose services cost from 25 thousand dollars. Who, if not
-              the state itself, should devote more time to them, protect their
-              rights and, in the end, start playing for their hard work?! We
-              urge you to respect and appreciate
-            </p>
+        <div className="description-history">
+          <div className="description">
+            <h1>Description</h1>
+            <div className="line-for-div"></div>
+            <div className="scroll">
+              <p>
+                We can predict in advance the main argument of the critics - a
+                housewife cannot be considered a real professional in each of
+                the listed areas! But we do not argue with this, because the
+                activities of a housewife include the skills of almost all of
+                the listed professions. But that's not all - a housewife is a
+                mother who tries her best to raise future worthy members of
+                society, and does it on her own, without resorting to the help
+                of surrogate mothers, whose services cost from 25 thousand
+                dollars. Who, if not the state itself, should devote more time
+                to them, protect their rights and, in the end, start playing for
+                their hard work?! We urge you to respect and appreciate
+              </p>
+            </div>
           </div>
+          <div className="history">
+            <div>
+              <h1>History</h1>
+            </div>
+
+            <table>
+              <tr>
+                <th>From</th>
+                <th>Time</th>
+                <th>Bidding Price</th>
+              </tr>
+              <tr>
+                <td>09x95asd2191....</td>
+                <td>09x95asd2191....</td>
+                <td>09x95asd2191....</td>
+                <td>09x95asd2191....</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12 minutes ago</td>
+                <td>1 day ago</td>
+                <td>12 hour ago</td>
+                <td>05.12.2022</td>
+              </tr>
+              <tr>
+                <td>0.532216 ETH = $ 1449.75</td>
+                <td>0.532216 ETH = $ 1449.75</td>
+                <td>0.532216 ETH = $ 1449.75</td>
+                <td>0.532216 ETH = $ 1449.75</td>
+              </tr>
+            </table>
+          </div>
+
+          <div
+            className="listings"
+            style={{ width: "682px", height: "68px", background: "#111d25" }}
+          ></div>
         </div>
 
         <div className="description">
@@ -166,8 +205,6 @@ export const NFT = () => {
             </div>
           </div>
         </div>
-
-        <div className="history"></div>
 
         <Popular first_word="Similar" second_word="Projects" />
         <section

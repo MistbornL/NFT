@@ -40,7 +40,6 @@
   position: relative;
   padding: 20px;
   box-sizing: border-box;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 448px;
@@ -208,4 +207,14 @@
 ::-webkit-scrollbar-thumb {
   background: #243038;
   border-radius: 6px;
+}
+
+.description-history {
+  gap: 20px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.history {
+  margin-top: -9em;
 }
