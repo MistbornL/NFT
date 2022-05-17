@@ -1,0 +1,17 @@
+.new-beggining {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-beggining h1 {
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
