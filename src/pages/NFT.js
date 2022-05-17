@@ -7,7 +7,7 @@ import NtfCard from "../components/main/nftCard/NtfCard";
 import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
-
+import nft from "../ui/nft.png";
 export const NFT = () => {
   const params = useParams();
   console.log(params);
@@ -26,62 +26,63 @@ export const NFT = () => {
       <div className="wrap">
         <Menu />
         <div className="line" />
-
-        <div
-          style={{
-            display: "flex",
-            width: "448px",
-            height: "445px",
-            marginTop: "79px",
-          }}
-        >
-          <img style={{ width: "100%" }} src={singleCard.coverImg}></img>
-        </div>
-        <div className="description-card">
-          <div className="description-top">
-            <h1>{singleCard.title}</h1>
-            <div className="description-top-right">
-              <div>
-                <img></img>
-                <p>189k</p>
-              </div>
-              <div>
-                <img />
-                <p>{singleCard.numberOfLikes}</p>
-              </div>
-              <div>
-                <img />
+        <div style={{ display: "flex", marginTop: "79px", gap: "20px" }}>
+          <div
+            style={{
+              display: "flex",
+              width: "448px",
+              height: "445px",
+              marginTop: "79px",
+            }}
+          >
+            <img style={{ width: "100%" }} src={singleCard.coverImg}></img>
+          </div>
+          <div className="description-card">
+            <div className="description-top">
+              <h1>{singleCard.title}</h1>
+              <div className="description-top-right">
+                <div>
+                  <img></img>
+                  <p>189k</p>
+                </div>
+                <div>
+                  <img />
+                  <p>{singleCard.numberOfLikes}</p>
+                </div>
+                <div>
+                  <img />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="owner">
-            <p>
-              Owner <span>Humanin</span>
-            </p>
-          </div>
-          <div className="line-for-description-card"></div>
-
-          <div className="bid-countdown">
-            <p>Current Bid</p>
-            <p>Countdown</p>
-          </div>
-
-          <div className="description-main">
-            <img></img>
-            <div>
-              <h1>
-                <span>
-                  {setSingleCard.price} {singleCard.currency} = $ 444
-                </span>
-              </h1>
-              <p>...</p>
+            <div className="owner">
+              <p>
+                Owner <span>Humanin</span>
+              </p>
             </div>
-          </div>
+            <div className="line-for-description-card"></div>
 
-          <div className="description-footer">
-            <button>Buy Now</button>
-            <button>Place Bid</button>
+            <div className="bid-countdown">
+              <p>Current Bid</p>
+              <p>Countdown</p>
+            </div>
+
+            <div className="description-main">
+              <img src={nft}></img>
+              <div>
+                <h1>
+                  <span>
+                    {setSingleCard.price} {singleCard.currency} = $ 444
+                  </span>
+                </h1>
+                <p>...</p>
+              </div>
+            </div>
+
+            <div className="description-footer">
+              <button>Buy Now</button>
+              <button>Place Bid</button>
+            </div>
           </div>
         </div>
 

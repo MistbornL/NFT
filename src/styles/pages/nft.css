@@ -142,6 +142,7 @@
 }
 
 .bid-countdown p {
+  width: 70px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -150,4 +151,24 @@
   /* identical to box height */
 
   color: #a2a2a2;
+}
+
+.description-main {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.description-main h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.description-main div {
+  display: flex;
 }
