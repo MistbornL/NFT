@@ -1,11 +1,12 @@
-import React from 'react'
-import Logo from '../logo'
-import Search from '../search'
-import Nav from '../navigation/nav'
+import React from "react";
+import Logo from "../logo";
+import Search from "../search";
+import Nav from "../navigation/nav";
+
 export const Menu = () => {
   return (
     <div className="container">
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: "flex", alignItems: "center" }}>
         <Logo />
         <Search />
       </div>
@@ -13,10 +14,11 @@ export const Menu = () => {
       <div className="futa">
         <Nav />
         <div className="btn">
-          <button type="submit" value="Submit">Connect Wallet</button>
+          <button type="submit" value="Submit">
+            Connect Wallet
+          </button>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};

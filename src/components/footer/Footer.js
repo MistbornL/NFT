@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../ui/logo.svg";
 import Elipse from "../../ui/elipse.png";
-import "./footer.css";
+import "../../styles/components/footer/footer.css";
 
 export const Footer = () => {
   return (
@@ -14,7 +14,7 @@ export const Footer = () => {
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
             exclusive digital items.
           </p>
-          <div className='footer-logo'>
+          <div className="footer-logo">
             <img src={Elipse}></img>
             <img src={Elipse}></img>
             <img src={Elipse}></img>
@@ -66,9 +66,15 @@ export const Footer = () => {
           <button>Subscribe</button>
         </div>
       </div>
-      <div className='linee'>
-        <div style={{ alignItems: 'center', textAlign: 'center', padding: '20px' }}><p style={{ display: 'contents', alignItems: 'center' }}>Copyright © 2022 CUBE | NFT Marketplace Template Kit. Designed by
-          Irakli Tchekhani</p></div>
+      <div className="linee">
+        <div
+          style={{ alignItems: "center", textAlign: "center", padding: "20px" }}
+        >
+          <p style={{ display: "contents", alignItems: "center" }}>
+            Copyright © 2022 CUBE | NFT Marketplace Template Kit. Designed by
+            Irakli Tchekhani
+          </p>
+        </div>
       </div>
     </div>
   );

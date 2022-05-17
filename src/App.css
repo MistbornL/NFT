@@ -37,22 +37,24 @@
   }
 }
 
-.txt p{
+.txt p {
   position: absolute;
   width: 90px;
   height: 30px;
   left: 194px;
   top: 24px;
 
-  font-family: 'Nico Moji';
+  font-family: "Nico Moji";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
 
-
-
-  background: linear-gradient(90deg, #4075FF 2.08%, rgba(205, 56, 190, 0.88) 97.08%);
+  background: linear-gradient(
+    90deg,
+    #4075ff 2.08%,
+    rgba(205, 56, 190, 0.88) 97.08%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,9 +67,8 @@
   height: 52px;
 }
 
-
 .container {
-  display:flex;
+  display: flex;
   width: 1440px;
   height: 85px;
   align-items: center;
@@ -79,12 +80,12 @@
   width: 261px;
   height: 35px;
   background: rgba(73, 86, 106, 0.35);
-  border: 1px solid #2D4662;
+  border: 1px solid #2d4662;
   box-sizing: border-box;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 ::placeholder {
   padding-left: 10px;
-  color:white
+  color: white;
 }
