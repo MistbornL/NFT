@@ -216,7 +216,7 @@
 }
 
 .history {
-  /* height: 425px; */
+  position: relative;
   margin-top: -9em;
 }
 
@@ -278,4 +278,11 @@ table td {
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.hider-table {
+  position: absolute;
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(transparent 10%, #111d25);
 }

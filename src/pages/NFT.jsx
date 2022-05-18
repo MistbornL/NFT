@@ -142,6 +142,7 @@ export const NFT = () => {
                 <td>1 day ago</td>
                 <td>0.532216 ETH = $ 1449.75</td>
               </tr>
+              <div style={{ width: "682px" }} className="hider-table"></div>
             </table>
           </div>
         </div>
