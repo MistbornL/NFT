@@ -238,7 +238,8 @@
 }
 
 .history table {
-  height: 260px;
+  overflow: auto;
+  height: 360px;
   table-layout: fixed;
   width: 100%;
   text-align: center;
@@ -256,6 +257,8 @@ table th {
 }
 
 table td {
+  /* display: flex;
+  align-items: center; */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -303,4 +306,14 @@ table td {
 
 .listings h1 {
   margin-left: 30px;
+}
+
+.popular {
+  margin-top: 20px;
+}
+
+.table-scroll {
+  width: 100%;
+  height: 238px;
+  overflow: auto;
 }

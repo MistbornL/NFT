@@ -8,6 +8,7 @@ import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
+import vector from "../ui/Vector.png";
 
 export const NFT = () => {
   const params = useParams();
@@ -116,34 +117,64 @@ export const NFT = () => {
               <h1>History</h1>
             </div>
 
-            <table>
-              <tr>
-                <th>From</th>
-                <th>Time</th>
-                <th>Bidding Price</th>
-              </tr>
-              <tr>
-                <td>09x95asd2191....</td>
-                <td>1 day ago</td>
-                <td>0.532216 ETH = $ 1449.75</td>
-              </tr>
-              <tr>
-                <td>09x95asd2191....</td>
-                <td>1 day ago</td>
-                <td>0.532216 ETH = $ 1449.75</td>
-              </tr>
-              <tr>
-                <td>09x95asd2191....</td>
-                <td>1 day ago</td>
-                <td>0.532216 ETH = $ 1449.75</td>
-              </tr>
-              <tr>
-                <td>09x95asd2191....</td>
-                <td>1 day ago</td>
-                <td>0.532216 ETH = $ 1449.75</td>
-              </tr>
-              <div style={{ width: "682px" }} className="hider-table"></div>
-            </table>
+            <div className="table-scroll">
+              <table>
+                <tr>
+                  <th>From</th>
+                  <th>Time</th>
+                  <th>Bidding Price</th>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <tr>
+                  <td>09x95asd2191....</td>
+                  <td>1 day ago</td>
+                  <td>
+                    <img style={{ marginRight: "7px" }} src={vector} />
+                    0.532216 ETH = $ 1449.75
+                  </td>
+                </tr>
+                <div style={{ width: "682px" }} className="hider-table"></div>
+              </table>
+            </div>
           </div>
         </div>
         <div
