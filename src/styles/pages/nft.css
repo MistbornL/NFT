@@ -192,7 +192,13 @@
   width: 100%;
   height: 4rem;
   left: 0;
-  background: linear-gradient(transparent 10%, #111d25);
+
+  background: linear-gradient(
+    5.8deg,
+    #111d25 4.43%,
+    rgba(17, 29, 37, 0) 117.91%
+  );
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -221,6 +227,7 @@
 }
 
 .history h1 {
+  margin-left: 30px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -262,7 +269,8 @@ table td {
 }
 
 .listings {
-  display: "flex";
+  align-items: center;
+  display: flex;
   width: 682px;
   height: 68px;
   background: #111d25;
@@ -281,8 +289,18 @@ table td {
 }
 
 .hider-table {
+  bottom: 0;
   position: absolute;
   height: 4rem;
   width: 100%;
-  background: linear-gradient(transparent 10%, #111d25);
+  background: linear-gradient(
+    28.76deg,
+    #111d25 16.18%,
+    rgba(17, 29, 37, 0) 196.12%
+  );
+  border-radius: 10px;
+}
+
+.listings h1 {
+  margin-left: 30px;
 }
