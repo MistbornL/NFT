@@ -124,29 +124,48 @@ export const NFT = () => {
               </tr>
               <tr>
                 <td>09x95asd2191....</td>
-                <td>09x95asd2191....</td>
-                <td>09x95asd2191....</td>
-                <td>09x95asd2191....</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>12 minutes ago</td>
                 <td>1 day ago</td>
-                <td>12 hour ago</td>
-                <td>05.12.2022</td>
+                <td>0.532216 ETH = $ 1449.75</td>
               </tr>
               <tr>
+                <td>09x95asd2191....</td>
+                <td>1 day ago</td>
                 <td>0.532216 ETH = $ 1449.75</td>
+              </tr>
+              <tr>
+                <td>09x95asd2191....</td>
+                <td>1 day ago</td>
                 <td>0.532216 ETH = $ 1449.75</td>
-                <td>0.532216 ETH = $ 1449.75</td>
+              </tr>
+              <tr>
+                <td>09x95asd2191....</td>
+                <td>1 day ago</td>
                 <td>0.532216 ETH = $ 1449.75</td>
               </tr>
             </table>
           </div>
-
+        </div>
+        <div
+          style={{
+            float: "right",
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "-8em",
+            width: "682px",
+            marginRight: "18em",
+            borderRadius: "10px",
+            top: 0,
+          }}
+        >
           <div
             className="listings"
-            style={{ width: "682px", height: "68px", background: "#111d25" }}
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              width: "682px",
+              height: "68px",
+              background: "#111d25",
+            }}
           ></div>
         </div>
 

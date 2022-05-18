@@ -35,7 +35,7 @@
 }
 
 .description {
-  margin-bottom: 20px;
+  margin-bottom: -50px;
   overflow: hidden;
   position: relative;
   padding: 20px;
@@ -216,5 +216,49 @@
 }
 
 .history {
+  height: 425px;
   margin-top: -9em;
+}
+
+.history h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.history table {
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+table th {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #a2a2a2;
+}
+
+table td {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.035em;
+
+  color: #ffffff;
+}
+
+table tr {
 }
