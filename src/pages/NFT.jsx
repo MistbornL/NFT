@@ -147,6 +147,8 @@ export const NFT = () => {
         </div>
         <div
           style={{
+            flexDirection: "column",
+            gap: "70px",
             float: "right",
             display: "flex",
             justifyContent: "center",
@@ -157,16 +159,12 @@ export const NFT = () => {
             top: 0,
           }}
         >
-          <div
-            className="listings"
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "682px",
-              height: "68px",
-              background: "#111d25",
-            }}
-          ></div>
+          <div className="listings">
+            <h1>Listings</h1>
+          </div>
+          <div className="listings">
+            <h1>Price History</h1>
+          </div>
         </div>
 
         <div className="description">
