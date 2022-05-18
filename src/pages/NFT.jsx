@@ -150,7 +150,7 @@ export const NFT = () => {
             float: "right",
             display: "flex",
             justifyContent: "center",
-            marginTop: "-8em",
+            marginTop: "-6em",
             width: "682px",
             marginRight: "18em",
             borderRadius: "10px",

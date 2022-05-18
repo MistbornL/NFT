@@ -35,7 +35,7 @@
 }
 
 .description {
-  margin-bottom: -50px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   padding: 20px;
@@ -216,7 +216,7 @@
 }
 
 .history {
-  height: 425px;
+  /* height: 425px; */
   margin-top: -9em;
 }
 
@@ -231,6 +231,7 @@
 }
 
 .history table {
+  height: 260px;
   table-layout: fixed;
   width: 100%;
   text-align: center;
@@ -258,7 +259,4 @@ table td {
   letter-spacing: 0.035em;
 
   color: #ffffff;
-}
-
-table tr {
 }
