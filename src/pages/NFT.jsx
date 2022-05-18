@@ -8,7 +8,8 @@ import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
-import vector from "../ui/Vector.png";
+import { Table } from "../components/nft/Table";
+import { DescriptionHistory } from "../components/nft/DescriptionHistory";
 
 export const NFT = () => {
   const params = useParams();
@@ -91,92 +92,8 @@ export const NFT = () => {
             </div>
           </div>
         </div>
+        <DescriptionHistory />
 
-        <div className="description-history">
-          <div className="description">
-            <h1>Description</h1>
-            <div className="line-for-div"></div>
-            <div className="scroll">
-              <p>
-                We can predict in advance the main argument of the critics - a
-                housewife cannot be considered a real professional in each of
-                the listed areas! But we do not argue with this, because the
-                activities of a housewife include the skills of almost all of
-                the listed professions. But that's not all - a housewife is a
-                mother who tries her best to raise future worthy members of
-                society, and does it on her own, without resorting to the help
-                of surrogate mothers, whose services cost from 25 thousand
-                dollars. Who, if not the state itself, should devote more time
-                to them, protect their rights and, in the end, start playing for
-                their hard work?! We urge you to respect and appreciate
-              </p>
-            </div>
-          </div>
-          <div className="history">
-            <div>
-              <h1>History</h1>
-            </div>
-
-            <div className="table-scroll">
-              <table>
-                <tr>
-                  <th>From</th>
-                  <th>Time</th>
-                  <th>Bidding Price</th>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <tr>
-                  <td>09x95asd2191....</td>
-                  <td>1 day ago</td>
-                  <td>
-                    <img style={{ marginRight: "7px" }} src={vector} />
-                    0.532216 ETH = $ 1449.75
-                  </td>
-                </tr>
-                <div style={{ width: "682px" }} className="hider-table"></div>
-              </table>
-            </div>
-          </div>
-        </div>
         <div
           style={{
             flexDirection: "column",
@@ -198,7 +115,6 @@ export const NFT = () => {
             <h1>Price History</h1>
           </div>
         </div>
-
         <div className="description">
           <h1>Properties</h1>
           <div className="line-for-div"></div>
@@ -254,7 +170,6 @@ export const NFT = () => {
             </div>
           </div>
         </div>
-
         <Popular first_word="Similar" second_word="Projects" />
         <section
           style={{
