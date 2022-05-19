@@ -102,11 +102,12 @@ button {
   box-sizing: border-box;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 button:hover {
-  background: #4075FF;
-  ;
+  box-shadow: 0 0 10px #f321e2, 0 0 40px #b510c4, 0 0 80px #780794;
+  background: #062574;
 }
 
 .card-cover span {
@@ -120,4 +121,8 @@ button:hover {
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.listings img {
+  cursor: pointer;
 }

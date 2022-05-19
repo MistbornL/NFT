@@ -15,8 +15,8 @@ import { PriceHistory } from "../components/nft/PriceHistory";
 export const NFT = () => {
   const params = useParams();
   const [singleCard, setSingleCard] = useState({ id: 0 });
-  const [toggleTopArrow, setToggleTopArrow] = useState(false);
-  const [toggleBottomArrow, setToggleBottomArrow] = useState(false);
+  const [toggleTopArrow, setToggleTopArrow] = useState(true);
+  const [toggleBottomArrow, setToggleBottomArrow] = useState(true);
 
   useEffect(() => {
     const card = NFT_CARDS.filter((c) => c.id === Number(params.id))[0];
