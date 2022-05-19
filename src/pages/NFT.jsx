@@ -8,22 +8,23 @@ import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
-
+import DownArrow from "../ui/DownArrow.svg";
 import { DescriptionHistory } from "../components/nft/DescriptionHistory";
 import { PriceHistory } from "../components/nft/PriceHistory";
 
 export const NFT = () => {
   const params = useParams();
-  console.log(params);
-
   const [singleCard, setSingleCard] = useState({ id: 0 });
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    let card = NFT_CARDS.filter((c) => c.id == params.id)[0];
+    const card = NFT_CARDS.filter((c) => c.id === Number(params.id))[0];
     setSingleCard(card);
-  }, []);
+  }, [params.id]);
 
-  console.log(singleCard);
+  const clickHandle = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <>
@@ -53,16 +54,14 @@ export const NFT = () => {
                 <h1>{singleCard.title}</h1>
                 <div className="description-top-right">
                   <div>
-                    <img></img>
+                    {/* <img /> */}
                     <p>189k</p>
                   </div>
                   <div>
-                    <img />
+                    {/* <img /> */}
                     <p>{singleCard.numberOfLikes}</p>
                   </div>
-                  <div>
-                    <img />
-                  </div>
+                  <div>{/* <img /> */}</div>
                 </div>
               </div>
 
@@ -82,7 +81,7 @@ export const NFT = () => {
                 <h1
                   style={{ display: "flex", alignItems: "center", gap: "10px" }}
                 >
-                  <img src={nft} alt="nft"></img>
+                  <img src={nft} alt="nft" />
                   {setSingleCard.price} {singleCard.currency}
                   <span> = $ 44440.62 </span>
                 </h1>
@@ -119,9 +118,14 @@ export const NFT = () => {
           >
             <div className="listings">
               <h1>Listings</h1>
+              <img onClick={clickHandle} src={DownArrow} alt="arrow" />
             </div>
-            <div className="listings">
+            <div
+              onClick={clickHandle}
+              className={toggle ? "listings" : "listings expand-listing"}
+            >
               <h1>Price History</h1>
+              <img src={DownArrow} alt="arrow" />
             </div>
           </div>
           <PriceHistory />

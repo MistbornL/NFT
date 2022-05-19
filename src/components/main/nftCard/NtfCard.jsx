@@ -2,8 +2,6 @@ import React from "react";
 import "./nftCard.css";
 import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
-import { useState } from "react";
-import NFT_CARDS from "../../../dummyData/data";
 import { Link } from "react-router-dom";
 
 const NtfCard = ({ item }) => {
@@ -28,17 +26,17 @@ const NtfCard = ({ item }) => {
   return (
     <div className="card-wrapper">
       <div className="card-cover">
-        <Link to={`/Nft-card/${item.id}`} key={item.id}>
+        <Link to={`/Nft-card/${item.id}`}>
           <img src={item.coverImg} alt="img" />
         </Link>
         <div
           style={{
-            width: '60px',
-            height: '25px',
-            justifyContent: 'center',
-            background: 'gba(50, 50, 50, 0.2)',
-            backdropFilter: 'blur(15px)',
-            borderRadius: '2px',
+            width: "60px",
+            height: "25px",
+            justifyContent: "center",
+            background: "gba(50, 50, 50, 0.2)",
+            backdropFilter: "blur(15px)",
+            borderRadius: "2px",
             gap: "10px",
             display: "flex",
             position: "absolute",

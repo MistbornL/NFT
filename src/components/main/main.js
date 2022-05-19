@@ -9,8 +9,6 @@ import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
 import Explore from "../../dummyData/explore_data";
-import { Routes, Route, Link } from "react-router-dom";
-
 
 function Main({ item }) {
   return (
@@ -25,13 +23,9 @@ function Main({ item }) {
         }}
       >
         {NFT_CARDS.map((item) => (
-
-
-          <NtfCard item={item} />
-
+          <NtfCard item={item} key={item.id} />
         ))}
       </section>
-
 
       <Popular first_word="Top" second_word="Sellers" />
 
@@ -59,10 +53,10 @@ function Main({ item }) {
               alignItems: "center",
             }}
           >
-            <img style={{ position: "absolute" }} src={Play} />
+            <img style={{ position: "absolute" }} src={Play} alt="play" />
           </div>
 
-          <img src={aboutImg}></img>
+          <img src={aboutImg} alt="about"></img>
         </div>
 
         <div className="desc">
