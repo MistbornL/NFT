@@ -77,9 +77,12 @@
 }
 
 .div-wrapper {
+  width: 27em;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 10px;
 }
 
 .description-top {
@@ -257,8 +260,6 @@ table th {
 }
 
 table td {
-  /* display: flex;
-  align-items: center; */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;

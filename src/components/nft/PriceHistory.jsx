@@ -1,4 +1,7 @@
 import React from "react";
+import Div_Info from "../../dummyData/data_for_sd";
+import { SmallDiv } from "./SmallDiv";
+import "./index.css";
 
 export const PriceHistory = () => {
   return (
@@ -7,54 +10,9 @@ export const PriceHistory = () => {
       <div className="line-for-div"></div>
       <div className="hider"></div>
       <div className="div-wrapper">
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
-        <div className="small-div">
-          <p></p>
-          <h1></h1>
-          <p></p>
-        </div>
+        {Div_Info.map((item) => (
+          <SmallDiv item={item} key={item.id} />
+        ))}
       </div>
     </div>
   );
