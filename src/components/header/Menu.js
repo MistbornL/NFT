@@ -11,14 +11,14 @@ export const Menu = () => {
         <Search />
       </div>
 
-      <div className="futa">
+      <nav className="futa">
         <Nav />
         <div className="btn">
           <button type="submit" value="Submit">
             Connect Wallet
           </button>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
