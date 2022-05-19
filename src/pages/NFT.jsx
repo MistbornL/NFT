@@ -15,15 +15,19 @@ import { PriceHistory } from "../components/nft/PriceHistory";
 export const NFT = () => {
   const params = useParams();
   const [singleCard, setSingleCard] = useState({ id: 0 });
-  const [toggle, setToggle] = useState(false);
+  const [toggleTopArrow, setToggleTopArrow] = useState(false);
+  const [toggleBottomArrow, setToggleBottomArrow] = useState(false);
 
   useEffect(() => {
     const card = NFT_CARDS.filter((c) => c.id === Number(params.id))[0];
     setSingleCard(card);
   }, [params.id]);
 
-  const clickHandle = () => {
-    setToggle(!toggle);
+  const clickHandleTop = () => {
+    setToggleTopArrow(!toggleTopArrow);
+  };
+  const clickHandleBottom = () => {
+    setToggleBottomArrow(!toggleBottomArrow);
   };
 
   return (
@@ -116,16 +120,21 @@ export const NFT = () => {
               top: 0,
             }}
           >
-            <div className="listings">
+            <div
+              className={
+                toggleTopArrow ? "listings" : "listings expand-listing"
+              }
+            >
               <h1>Listings</h1>
-              <img onClick={clickHandle} src={DownArrow} alt="arrow" />
+              <img onClick={clickHandleTop} src={DownArrow} alt="arrow" />
             </div>
             <div
-              onClick={clickHandle}
-              className={toggle ? "listings" : "listings expand-listing"}
+              className={
+                toggleBottomArrow ? "listings" : "listings expand-listing"
+              }
             >
               <h1>Price History</h1>
-              <img src={DownArrow} alt="arrow" />
+              <img onClick={clickHandleBottom} src={DownArrow} alt="arrow" />
             </div>
           </div>
           <PriceHistory />
