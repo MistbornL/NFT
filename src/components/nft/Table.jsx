@@ -13,7 +13,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>
@@ -21,7 +21,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>
@@ -29,7 +29,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>
@@ -37,7 +37,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>
@@ -45,7 +45,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>
@@ -53,7 +53,7 @@ export const Table = () => {
           <td>09x95asd2191....</td>
           <td>1 day ago</td>
           <td>
-            <img style={{ marginRight: "7px" }} src={vector} />
+            <img style={{ marginRight: "7px" }} src={vector} alt="vector" />
             0.532216 ETH = $ 1449.75
           </td>
         </tr>

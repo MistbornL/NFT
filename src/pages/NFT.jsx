@@ -8,8 +8,9 @@ import Popular from "../components/main/Popular/Popular";
 import "../styles/pages/nft.css";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
-import { Table } from "../components/nft/Table";
+
 import { DescriptionHistory } from "../components/nft/DescriptionHistory";
+import { PriceHistory } from "../components/nft/PriceHistory";
 
 export const NFT = () => {
   const params = useParams();
@@ -27,163 +28,120 @@ export const NFT = () => {
   return (
     <>
       <div className="wrap">
-        <Menu />
-        <div className="line" />
-        <div style={{ display: "flex", marginTop: "79px", gap: "20px" }}>
-          <div
-            style={{
-              display: "flex",
-              width: "448px",
-              height: "445px",
-            }}
-          >
-            <img style={{ width: "100%" }} src={singleCard.coverImg}></img>
-          </div>
-          <div className="description-card">
-            <div className="description-top">
-              <h1>{singleCard.title}</h1>
-              <div className="description-top-right">
-                <div>
-                  <img></img>
-                  <p>189k</p>
-                </div>
-                <div>
-                  <img />
-                  <p>{singleCard.numberOfLikes}</p>
-                </div>
-                <div>
-                  <img />
+        <header>
+          <Menu />
+        </header>
+
+        <main>
+          <div className="line" />
+          <div style={{ display: "flex", marginTop: "79px", gap: "20px" }}>
+            <div
+              style={{
+                display: "flex",
+                width: "448px",
+                height: "445px",
+              }}
+            >
+              <img
+                style={{ width: "100%" }}
+                src={singleCard.coverImg}
+                alt="coverimg"
+              ></img>
+            </div>
+            <div className="description-card">
+              <div className="description-top">
+                <h1>{singleCard.title}</h1>
+                <div className="description-top-right">
+                  <div>
+                    <img></img>
+                    <p>189k</p>
+                  </div>
+                  <div>
+                    <img />
+                    <p>{singleCard.numberOfLikes}</p>
+                  </div>
+                  <div>
+                    <img />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="owner">
-              <p>
-                Owner <span>Humanin</span>
-              </p>
-            </div>
-            <div className="line-for-description-card"></div>
+              <div className="owner">
+                <p>
+                  Owner <span>Humanin</span>
+                </p>
+              </div>
+              <div className="line-for-description-card"></div>
 
-            <div className="bid-countdown">
-              <p>Current Bid</p>
-              <p>Countdown</p>
-            </div>
+              <div className="bid-countdown">
+                <p>Current Bid</p>
+                <p>Countdown</p>
+              </div>
 
-            <div className="description-main">
-              <h1
-                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              <div className="description-main">
+                <h1
+                  style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                >
+                  <img src={nft} alt="nft"></img>
+                  {setSingleCard.price} {singleCard.currency}
+                  <span> = $ 44440.62 </span>
+                </h1>
+                <h1>
+                  32
+                  <span>days</span>
+                </h1>
+              </div>
+
+              <div
+                className="description-footer"
+                style={{ display: "flex", gap: "30px" }}
               >
-                <img src={nft}></img>
-                {setSingleCard.price} {singleCard.currency}
-                <span> = $ 44440.62 </span>
-              </h1>
-              <h1>
-                32
-                <span>days</span>
-              </h1>
-            </div>
-
-            <div
-              className="description-footer"
-              style={{ display: "flex", gap: "30px" }}
-            >
-              <button>Buy Now</button>
-              <button>Place Bid</button>
+                <button>Buy Now</button>
+                <button>Place Bid</button>
+              </div>
             </div>
           </div>
-        </div>
-        <DescriptionHistory />
+          <DescriptionHistory />
 
-        <div
-          style={{
-            flexDirection: "column",
-            gap: "70px",
-            float: "right",
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "-6em",
-            width: "682px",
-            marginRight: "18em",
-            borderRadius: "10px",
-            top: 0,
-          }}
-        >
-          <div className="listings">
-            <h1>Listings</h1>
-          </div>
-          <div className="listings">
-            <h1>Price History</h1>
-          </div>
-        </div>
-        <div className="description">
-          <h1>Properties</h1>
-          <div className="line-for-div"></div>
-          <div className="hider"></div>
-          <div className="div-wrapper">
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
+          <div
+            style={{
+              flexDirection: "column",
+              gap: "70px",
+              float: "right",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "-6em",
+              width: "682px",
+              marginRight: "18em",
+              borderRadius: "10px",
+              top: 0,
+            }}
+          >
+            <div className="listings">
+              <h1>Listings</h1>
             </div>
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
-            </div>
-            <div className="small-div">
-              <p></p>
-              <h1></h1>
-              <p></p>
+            <div className="listings">
+              <h1>Price History</h1>
             </div>
           </div>
-        </div>
-        <Popular first_word="Similar" second_word="Projects" />
-        <section
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: "70px",
-          }}
-        >
-          {NFT_CARDS.map((item) => (
-            <NtfCard item={item} key={item.id} />
-          ))}
-        </section>
+          <PriceHistory />
+          <Popular first_word="Similar" second_word="Projects" />
+          <section
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginBottom: "70px",
+            }}
+          >
+            {NFT_CARDS.map((item) => (
+              <NtfCard item={item} key={item.id} />
+            ))}
+          </section>
+        </main>
       </div>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
