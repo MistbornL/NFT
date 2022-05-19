@@ -12,6 +12,7 @@ import DownArrow from "../ui/DownArrow.svg";
 import { DescriptionHistory } from "../components/nft/DescriptionHistory";
 import { PriceHistory } from "../components/nft/PriceHistory";
 import heart from "../ui/heart.svg";
+import eye from "../ui/eye.png";
 
 export const NFT = () => {
   const params = useParams();
@@ -59,7 +60,7 @@ export const NFT = () => {
                 <h1>{singleCard.title}</h1>
                 <div className="description-top-right">
                   <div>
-                    {/* <img/> */}
+                    <img src={eye} alt="eye" />
                     <p>189k</p>
                   </div>
                   <div style={{ display: "flex" }}>

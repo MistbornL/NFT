@@ -115,6 +115,8 @@
 }
 
 .description-top-right div {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: min-content;
   font-family: "Poppins";
