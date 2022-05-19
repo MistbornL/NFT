@@ -105,16 +105,22 @@
 }
 
 .description-top-right {
+  gap: 20px;
   text-align: center;
   display: flex;
 }
 
-.description-top-right div > p {
+.description-top-right p {
+  margin: 0;
+}
+
+.description-top-right div {
+  align-items: center;
+  height: min-content;
   font-family: "Poppins";
   font-style: normal;
   background: #19252d;
   border-radius: 10px;
-  width: 61px;
 }
 
 .description-card {

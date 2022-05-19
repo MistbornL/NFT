@@ -11,6 +11,7 @@ import nft from "../ui/nft.png";
 import DownArrow from "../ui/DownArrow.svg";
 import { DescriptionHistory } from "../components/nft/DescriptionHistory";
 import { PriceHistory } from "../components/nft/PriceHistory";
+import heart from "../ui/heart.svg";
 
 export const NFT = () => {
   const params = useParams();
@@ -58,11 +59,11 @@ export const NFT = () => {
                 <h1>{singleCard.title}</h1>
                 <div className="description-top-right">
                   <div>
-                    {/* <img /> */}
+                    {/* <img/> */}
                     <p>189k</p>
                   </div>
-                  <div>
-                    {/* <img /> */}
+                  <div style={{ display: "flex" }}>
+                    <img src={heart} alt="heart" />
                     <p>{singleCard.numberOfLikes}</p>
                   </div>
                   <div>{/* <img /> */}</div>
