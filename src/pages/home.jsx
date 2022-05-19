@@ -13,9 +13,15 @@ const Home = () => {
         <Header />
         <div className="line" />
       </div>
+
       <Info />
-      <Main />
-      <Footer />
+      <main>
+        <Main />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
