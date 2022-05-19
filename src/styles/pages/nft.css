@@ -290,6 +290,7 @@ table td {
 }
 
 .listings h1 {
+  margin-left: 30px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -298,6 +299,10 @@ table td {
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.listings img {
+  cursor: pointer;
 }
 
 .hider-table {
@@ -311,10 +316,6 @@ table td {
     rgba(17, 29, 37, 0) 196.12%
   );
   border-radius: 10px;
-}
-
-.listings h1 {
-  margin-left: 30px;
 }
 
 .popular {
