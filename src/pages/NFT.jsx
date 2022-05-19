@@ -13,6 +13,7 @@ import { DescriptionHistory } from "../components/nft/DescriptionHistory";
 import { PriceHistory } from "../components/nft/PriceHistory";
 import heart from "../ui/heart.svg";
 import eye from "../ui/eye.png";
+import share from "../ui/share.png";
 
 export const NFT = () => {
   const params = useParams();
@@ -67,7 +68,9 @@ export const NFT = () => {
                     <img src={heart} alt="heart" />
                     <p>{singleCard.numberOfLikes}</p>
                   </div>
-                  <div>{/* <img /> */}</div>
+                  <div style={{ width: "40px", height: "23px" }}>
+                    <img src={share} alt={"share"} />
+                  </div>
                 </div>
               </div>
 
