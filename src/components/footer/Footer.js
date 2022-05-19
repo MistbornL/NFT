@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-left">
-        <img src={Logo}></img>
+        <img src={Logo} alt="logo" />
         <div className="footer-left-bottom">
           <p>
             The world’s first and largest digital marketplace for crypto
@@ -15,10 +15,10 @@ export const Footer = () => {
             exclusive digital items.
           </p>
           <div className="footer-logo">
-            <img src={Elipse}></img>
-            <img src={Elipse}></img>
-            <img src={Elipse}></img>
-            <img src={Elipse}></img>
+            <img src={Elipse} alt="elipse" />
+            <img src={Elipse} alt="elipse" />
+            <img src={Elipse} alt="elipse" />
+            <img src={Elipse} alt="elipse" />
           </div>
         </div>
       </div>

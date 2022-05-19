@@ -15,7 +15,7 @@ export const TopSellers = ({ item }) => {
             </div>
             <div className="rate">
               <span>
-                <img src={triangle} />
+                <img src={triangle} alt="triangle" />
               </span>
               <span>1.25 %</span>
             </div>

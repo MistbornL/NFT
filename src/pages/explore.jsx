@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { Menu } from "../components/header/Menu";
 import "../components/header/index.css";
 import "../styles/pages/explore.css";
