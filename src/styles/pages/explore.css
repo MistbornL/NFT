@@ -1,4 +1,5 @@
 .new-beggining {
+  margin-bottom: 69px;
   margin-top: 46px;
   display: flex;
   justify-content: center;
@@ -14,4 +15,29 @@
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.explore-menu {
+  background: #111d25;
+  border-radius: 10px;
+}
+
+.explore-menu ul {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.explore-menu li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #b4b4b4;
+
+  list-style: none;
 }

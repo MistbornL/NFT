@@ -3,26 +3,39 @@ import "./nftCard.css";
 import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
 import { Link } from "react-router-dom";
+// import NFT_CARDS from "../../../dummyData/data";
+// import { useState } from "react";
 
 const NtfCard = ({ item }) => {
-  // const handleLIke = (id) => {
-  //     console.log(id)
-  //     let temparray = [...NFT_CARDS];
-  //     temparray.map(item => {
-  //         console.log(item)
-  //         if (item.liked && item.id === id) {
-  //             item.liked = false;
-  //             item.numberOfLikes -= 1
-  //         } else {
-  //             item.liked = true;
-  //             item.numberOfLikes += 1
-  //         }
+  // const handleLiked = (id) => {
+  //   console.log(id);
+  //   let temparray = [...NFT_CARDS];
+  //   console.log(temparray);
+  //   temparray.map((item) => {
+  //     console.log(item);
+  //     if (item.liked && item.id === id) {
+  //       item.liked = false;
+  //       item.numberOfLikes -= 1;
+  //     } else {
+  //       item.liked = true;
+  //       item.numberOfLikes += 1;
+  //     }
 
-  //         return item;
-  //     })
+  //     return item;
+  //   });
 
-  //     NFT_CARDS = temparray;
-  // }
+  //   NFT_CARDS = temparray;
+  // };
+
+  // const [liked, setLiked] = useState(false);
+
+  // const handleLiked = (id) => {
+  //   NFT_CARDS.map((item) => {
+  //     console.log(id);
+  //     return item;
+  //   });
+  // };
+
   return (
     <div className="card-wrapper">
       <div className="card-cover">
@@ -46,7 +59,21 @@ const NtfCard = ({ item }) => {
             zIndex: 10,
           }}
         >
-          <Heart fill={item.liked ? "#ff4646" : "#FFFFFF"} />
+          <Heart
+            style={{
+              cursor: "pointer",
+            }}
+            // onClick={() => {
+            //   setLiked(!liked);
+            //   if (item.liked === true) {
+            //     item.numberOfLikes += 1;
+            //   } else {
+            //     item.numberOfLikes -= 1;
+            //   }
+            // }}
+            // onClick={handleLiked}
+            // fill={liked ? "#ff4646" : "#FFFFFF"}
+          />
           <span
             style={{
               color: "white",

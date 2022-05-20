@@ -1,19 +1,53 @@
 import { Menu } from "../components/header/Menu";
 import "../components/header/index.css";
 import "../styles/pages/explore.css";
+import ExploreData from "../dummyData/explore_data";
+import NtfCard from "../components/main/nftCard/NtfCard";
+import "../components/main/nftCard/nftCard.css";
+import { Footer } from "../components/footer/Footer";
 
 const Explore = () => {
   return (
-    <div className="wrap">
-      <div className="container">
-        <Menu />
-        <div className="line" />
+    <fragment>
+      <div className="wrap">
+        <div className="container">
+          <Menu />
+          <div className="line" />
+        </div>
+        <div className="new-beggining">
+          <h1>Explore connections</h1>
+        </div>
+        <nav className="explore-menu">
+          <ul>
+            <li>Trending</li>
+            <li>Top</li>
+            <li>Art</li>
+            <li>Celebrities</li>
+            <li>Photography</li>
+            <li>Music</li>
+            <li>Sport</li>
+            <li>Trading Cards</li>
+            <li>Utility</li>
+            <li>Virtual Worlds</li>
+          </ul>
+        </nav>
+
+        <main>
+          <section
+            style={{
+              display: "grid",
+              marginBottom: "70px",
+              gridTemplateColumns: "repeat(4, 1fr)",
+            }}
+          >
+            {ExploreData.map((item) => (
+              <NtfCard item={item} key={item.id} />
+            ))}
+          </section>
+        </main>
       </div>
-      <div className="new-beggining">
-        <h1>Explore connections</h1>
-      </div>
-      <div className="explore-menu"></div>
-    </div>
+      <Footer />
+    </fragment>
   );
 };
 
