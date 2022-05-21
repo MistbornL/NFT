@@ -23,7 +23,10 @@ class ErrorBoundary extends React.Component {
             </h3>
           </div>
           <div className="row">
-            <details style={{ whiteSpace: "pre-wrap" }}>
+            <details
+              className="tex-info"
+              style={{ color: "blue", whiteSpace: "pre-wrap" }}
+            >
               {error && error.toString()}
               <br />
               {errorInfo.componentStack}

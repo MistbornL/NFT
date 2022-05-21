@@ -168,7 +168,7 @@
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   width: 100%;
   padding: 1px;
   background: linear-gradient(
@@ -179,15 +179,16 @@
 }
 
 .box {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80px;
   height: 93px;
 }
 
 .box h2 {
   margin: 0;
-  width: 74px;
-  height: 42px;
+  align-items: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
