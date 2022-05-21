@@ -4,14 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import ScrollOnTop from "./services/ScrollOnTop";
+import ErrorBoundary from "./services/errorboundary/ErrorBoundary";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ScrollOnTop>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ScrollOnTop>
+    <ErrorBoundary>
+      <ScrollOnTop>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ScrollOnTop>
+    </ErrorBoundary>
   </React.StrictMode>
 );
