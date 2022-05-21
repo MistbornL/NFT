@@ -2,7 +2,8 @@
   display: flex;
   text-align: center;
   margin: 0;
-  height: 11px;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   list-style: none;
 }
@@ -29,8 +30,8 @@
 }
 
 .btn button {
+  margin: 0;
   width: 150px;
-  height: 35px;
   background: rgba(64, 117, 255, 0.3);
   border: 1px solid #4075ff;
   box-sizing: border-box;
@@ -46,8 +47,18 @@
 
 .futa {
   display: flex;
-  justify-content: flex-end;
+  text-align: center;
   align-items: center;
+}
+
+.container {
+  transition: 0.3s all ease-in-out;
+}
+
+.container:hover {
+  /* border-bottom: 2px solid #4075ff; */
+  box-shadow: 0 0 10px #cf12c0, 0 0 40px #cf12c0, 0 0 80px rgba(64, 117, 255, 5);
+  /* box-shadow: 0 0 20px #4075ff; */
 }
 
 .moon {
