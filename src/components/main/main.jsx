@@ -9,8 +9,11 @@ import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
 import Explore from "../../dummyData/explore_data";
+import { useSelector } from "react-redux";
 
 function Main({ item }) {
+  const counter = useSelector((state) => state.counter);
+  console.log(counter);
   return (
     <div className="wrapper">
       <Popular first_word="Most" second_word="Popular" />

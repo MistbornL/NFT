@@ -3,7 +3,6 @@ import Header from "../components/header/header";
 import Info from "../components/header/info";
 import Main from "../components/main/main";
 import "../components/header/index.css";
-
 import "./index.css";
 
 const Home = () => {
