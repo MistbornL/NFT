@@ -11,11 +11,11 @@ import { rename } from "../state/actions";
 const Home = () => {
   const counter = useSelector((state) => state.name);
   const dispatch = useDispatch();
+
   const increment = () => {
     dispatch(rename("kvaxi"));
   };
 
-  console.log(counter);
   return (
     <>
       <div className="wrap">

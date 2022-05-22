@@ -3,10 +3,18 @@ import "./nftCard.css";
 import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
 import { Link } from "react-router-dom";
-// import NFT_CARDS from "../../../dummyData/data";
-// import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { toggleLIke } from "../../../state/actions";
 
 const NtfCard = ({ item }) => {
+  const likechanger = useSelector((state) => state.liked);
+  const dispatch = useDispatch();
+  const handleLike = () => {
+    dispatch(toggleLIke(likechanger));
+  };
+
+  console.log(!likechanger);
   // const handleLiked = (id) => {
   //   console.log(id);
   //   let temparray = [...NFT_CARDS];
@@ -63,15 +71,7 @@ const NtfCard = ({ item }) => {
             style={{
               cursor: "pointer",
             }}
-            // onClick={() => {
-            //   setLiked(!liked);
-            //   if (item.liked === true) {
-            //     item.numberOfLikes += 1;
-            //   } else {
-            //     item.numberOfLikes -= 1;
-            //   }
-            // }}
-            // onClick={handleLiked}
+            onClick={handleLike}
             // fill={liked ? "#ff4646" : "#FFFFFF"}
           />
           <span
