@@ -1,18 +1,14 @@
 import NFT_CARDS from "../dummyData/data";
-import { LIKED, RENAME } from "./types";
+import { LIKED } from "./types";
 
 const initialState = {
-  name: "Lasha",
-  data: NFT_CARDS,
-  liked: Boolean,
+  data: Boolean,
 };
 const reducer = (state = initialState, action) => {
   NFT_CARDS.map((nft) => {
-    return (initialState.liked = nft.liked);
+    return (initialState.liked = nft);
   });
   switch (action.type) {
-    case RENAME:
-      return { ...state, name: action.payload };
     case LIKED:
       return { ...state, liked: action.payload };
     default:

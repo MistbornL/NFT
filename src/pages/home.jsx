@@ -4,22 +4,11 @@ import Info from "../components/header/info";
 import Main from "../components/main/main";
 import "../components/header/index.css";
 import "./index.css";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { rename } from "../state/actions";
 
 const Home = () => {
-  const counter = useSelector((state) => state.name);
-  const dispatch = useDispatch();
-
-  const increment = () => {
-    dispatch(rename("kvaxi"));
-  };
-
   return (
     <>
       <div className="wrap">
-        <button onClick={increment}>increment</button>
         <Header />
         <div className="line" />
       </div>

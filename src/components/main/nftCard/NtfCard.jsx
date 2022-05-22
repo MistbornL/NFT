@@ -14,7 +14,7 @@ const NtfCard = ({ item }) => {
     dispatch(toggleLIke(likechanger));
   };
 
-  console.log(!likechanger);
+  console.log(likechanger);
   // const handleLiked = (id) => {
   //   console.log(id);
   //   let temparray = [...NFT_CARDS];
@@ -72,7 +72,7 @@ const NtfCard = ({ item }) => {
               cursor: "pointer",
             }}
             onClick={handleLike}
-            // fill={liked ? "#ff4646" : "#FFFFFF"}
+            fill={likechanger ? "#ff4646" : "#FFFFFF"}
           />
           <span
             style={{
