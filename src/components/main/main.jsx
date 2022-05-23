@@ -3,14 +3,15 @@ import "./index.css";
 import Popular from "./Popular/Popular";
 
 import NtfCard from "./nftCard/NtfCard";
-import NFT_CARDS from "../../dummyData/data";
+// import NFT_CARDS from "../../dummyData/data";
 import { TopSellers } from "./top_sellers_section/TopSellers";
 import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
-import Explore from "../../dummyData/explore_data";
-
-function Main({ item }) {
+import ExploreData from "../../dummyData/explore_data";
+import { useSelector } from "react-redux";
+function Main() {
+  const reduxNft = useSelector((state) => state);
   return (
     <div className="wrapper">
       <Popular first_word="Most" second_word="Popular" />
@@ -22,7 +23,7 @@ function Main({ item }) {
           marginBottom: "73px",
         }}
       >
-        {NFT_CARDS.map((item) => (
+        {reduxNft.map((item) => (
           <NtfCard item={item} key={item.id} />
         ))}
       </section>
@@ -87,7 +88,7 @@ function Main({ item }) {
           gridTemplateColumns: "repeat(4,  1fr)",
         }}
       >
-        {Explore.map((item) => (
+        {ExploreData.map((item) => (
           <NtfCard item={item} key={item.id} />
         ))}
       </section>

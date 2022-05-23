@@ -3,46 +3,20 @@ import "./nftCard.css";
 import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { toggleLIke } from "../../../state/actions";
+import { changeLiked } from "../../../state/actions";
 
 const NtfCard = ({ item }) => {
-  const likechanger = useSelector((state) => state.liked);
   const dispatch = useDispatch();
-  const handleLike = () => {
-    dispatch(toggleLIke(likechanger));
+  const handleLike = (id) => (e) => {
+    dispatch(changeLiked(id, !item.liked));
+    if (item.liked && id === item.id) {
+      item.numberOfLikes += 1;
+    } else {
+      item.numberOfLikes -= 1;
+    }
+    console.log(item.numberOfLikes);
   };
-
-  console.log(likechanger);
-  // const handleLiked = (id) => {
-  //   console.log(id);
-  //   let temparray = [...NFT_CARDS];
-  //   console.log(temparray);
-  //   temparray.map((item) => {
-  //     console.log(item);
-  //     if (item.liked && item.id === id) {
-  //       item.liked = false;
-  //       item.numberOfLikes -= 1;
-  //     } else {
-  //       item.liked = true;
-  //       item.numberOfLikes += 1;
-  //     }
-
-  //     return item;
-  //   });
-
-  //   NFT_CARDS = temparray;
-  // };
-
-  // const [liked, setLiked] = useState(false);
-
-  // const handleLiked = (id) => {
-  //   NFT_CARDS.map((item) => {
-  //     console.log(id);
-  //     return item;
-  //   });
-  // };
 
   return (
     <div className="card-wrapper">
@@ -71,8 +45,8 @@ const NtfCard = ({ item }) => {
             style={{
               cursor: "pointer",
             }}
-            onClick={handleLike}
-            fill={likechanger ? "#ff4646" : "#FFFFFF"}
+            onClick={handleLike(item.id)}
+            fill={item.liked ? "#ff4646" : "#FFFFFF"}
           />
           <span
             style={{

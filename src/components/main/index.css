@@ -138,9 +138,11 @@
   display: grid;
   justify-items: center;
   width: 1440px;
-  background: linear-gradient(89.98deg,
-      rgba(40, 65, 130, 0.05) 3.28%,
-      rgba(109, 33, 102, 0.05) 99.98%);
+  background: linear-gradient(
+    89.98deg,
+    rgba(40, 65, 130, 0.05) 3.28%,
+    rgba(109, 33, 102, 0.05) 99.98%
+  );
   justify-content: space-between;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 20px;
@@ -156,7 +158,6 @@
 
 .desc {
   padding: 50px;
-  height: 241px;
   background: #111d25;
   border-radius: 0px 10px 10px 0px;
 }
