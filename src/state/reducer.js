@@ -1,5 +1,5 @@
 import NFT_CARDS from "../dummyData/data";
-import { CHANGE_LIKED, LIKED } from "./types";
+import { CHANGE_LIKED } from "./types";
 
 const initialState = [...NFT_CARDS];
 
