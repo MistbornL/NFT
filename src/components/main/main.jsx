@@ -30,7 +30,7 @@ function Main() {
       <Popular first_word="Top" second_word="Sellers" />
 
       <section className="middleel">
-        {Data.map((item) => (
+        {reduxNft.divInfo.map((item) => (
           <TopSellers item={item} key={item.id} />
         ))}
       </section>

@@ -8,10 +8,10 @@ export const TopSellers = ({ item }) => {
       <div>
         <ul style={{ display: "flex", justifyContent: "center" }}>
           <li>
-            <img src={item.userIcon} alt="icon" />
+            <img src={item.userImg} alt="icon" />
             <div className="section-top-left">
               <span>{item.title}</span>
-              <p>{item.user}</p>
+              <p>{item.dollar}</p>
             </div>
             <div className="rate">
               <span>

@@ -1,6 +1,9 @@
-const Div_Info = [
+const DIV_INFO = [
   {
     id: 1,
+    userImg: "/assets/images/elipse.png",
+    title: "IrakliN",
+    dollar: "$11,530,785",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -8,6 +11,9 @@ const Div_Info = [
 
   {
     id: 2,
+    userImg: "/assets/images/elipse.png",
+    title: "IrakliN",
+    dollar: "$11,530,785",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -15,6 +21,9 @@ const Div_Info = [
 
   {
     id: 3,
+    userImg: "/assets/images/elipse.png",
+    title: "IrakliN",
+    dollar: "$11,530,785",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -22,6 +31,9 @@ const Div_Info = [
 
   {
     id: 4,
+    userImg: "/assets/images/elipse.png",
+    title: "IrakliN",
+    dollar: "$11,530,785",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -29,6 +41,9 @@ const Div_Info = [
 
   {
     id: 5,
+    userImg: "/assets/images/elipse.png",
+    title: "IrakliN",
+    dollar: "$11,530,785",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -36,6 +51,9 @@ const Div_Info = [
 
   {
     id: 6,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -43,6 +61,9 @@ const Div_Info = [
 
   {
     id: 7,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -50,6 +71,9 @@ const Div_Info = [
 
   {
     id: 8,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
@@ -57,10 +81,13 @@ const Div_Info = [
 
   {
     id: 9,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
     top: "BACKGROUND",
     middle: "Lightblue",
     bottom: "3%",
   },
 ];
 
-export default Div_Info;
+export default DIV_INFO;
