@@ -11,6 +11,7 @@ const reducer = (state = initialState, action) => {
           return {
             ...nft,
             liked: action.payload.liked,
+            numberOfLikes: action.payload.numberOfLikes,
           };
         }
         return nft;

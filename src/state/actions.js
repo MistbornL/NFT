@@ -5,10 +5,11 @@ export const toggleLIke = (liked) => ({
   payload: !liked,
 });
 
-export const changeLiked = (id, liked) => ({
+export const changeLiked = (id, liked, numberOfLikes) => ({
   type: CHANGE_LIKED,
   payload: {
     id,
     liked,
+    numberOfLikes,
   },
 });
