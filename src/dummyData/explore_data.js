@@ -1,4 +1,4 @@
-const ExploreData = [
+const EXPLORE_DATA = [
   {
     id: 1,
     coverImg: "/assets/images/statue.png",
@@ -193,4 +193,4 @@ const ExploreData = [
   },
 ];
 
-export default ExploreData;
+export default EXPLORE_DATA;

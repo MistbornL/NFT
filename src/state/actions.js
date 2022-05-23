@@ -1,9 +1,4 @@
-import { CHANGE_LIKED, LIKED } from "./types";
-
-export const toggleLIke = (liked) => ({
-  type: LIKED,
-  payload: !liked,
-});
+import { CHANGE_LIKED } from "./types";
 
 export const changeLiked = (id, liked, numberOfLikes) => ({
   type: CHANGE_LIKED,

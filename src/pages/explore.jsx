@@ -1,7 +1,7 @@
 import { Menu } from "../components/header/Menu";
 import "../components/header/index.css";
 import "../styles/pages/explore.css";
-import ExploreData from "../dummyData/explore_data";
+import EXPLORE_DATA from "../dummyData/explore_data";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import "../components/main/nftCard/nftCard.css";
 import { Footer } from "../components/footer/Footer";
@@ -44,7 +44,7 @@ const Explore = () => {
               justifyItems: "center",
             }}
           >
-            {ExploreData.map((item) => (
+            {EXPLORE_DATA.map((item) => (
               <NtfCard item={item} key={item.id} />
             ))}
           </section>
