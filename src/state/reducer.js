@@ -24,10 +24,6 @@ const reducer = (state = initialState, action) => {
           }
           return nft;
         }),
-      };
-    case CHANGE_LIKED_EXPLORE:
-      return {
-        ...state,
         exploreData: state.exploreData.map((nft) => {
           if (nft.id === action.payload.id) {
             return {

@@ -153,7 +153,7 @@ export const NFT = () => {
               marginBottom: "70px",
             }}
           >
-            {NFT_CARDS.map((item) => (
+            {reduxNft.nftData.map((item) => (
               <NtfCard item={item} key={item.id} />
             ))}
           </section>
