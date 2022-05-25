@@ -8,13 +8,13 @@ import { changeLiked } from "../../../state/actions";
 
 const NtfCard = ({ item }) => {
   const dispatch = useDispatch();
-  const handleLike = (id) => (e) => {
-    console.log(item.id);
+  const handleLike = (id) => () => {
+    console.log(item.liked);
     dispatch(
       changeLiked(
         id,
         !item.liked,
-        item.liked ? (item.numberOfLikes += 1) : (item.numberOfLikes -= 1)
+        !item.liked ? (item.numberOfLikes += 1) : (item.numberOfLikes -= 1)
       )
     );
   };

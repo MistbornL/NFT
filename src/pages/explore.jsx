@@ -1,12 +1,13 @@
 import { Menu } from "../components/header/Menu";
 import "../components/header/index.css";
 import "../styles/pages/explore.css";
-import EXPLORE_DATA from "../dummyData/explore_data";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import "../components/main/nftCard/nftCard.css";
 import { Footer } from "../components/footer/Footer";
+import { useSelector } from "react-redux";
 
 const Explore = () => {
+  const reduxNft = useSelector((state) => state);
   return (
     <fragment>
       <div className="wrap">
@@ -44,7 +45,7 @@ const Explore = () => {
               justifyItems: "center",
             }}
           >
-            {EXPLORE_DATA.map((item) => (
+            {reduxNft.exploreData.map((item) => (
               <NtfCard item={item} key={item.id} />
             ))}
           </section>

@@ -88,6 +88,33 @@ const DIV_INFO = [
     middle: "Lightblue",
     bottom: "3%",
   },
+  {
+    id: 10,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
+    top: "BACKGROUND",
+    middle: "Lightblue",
+    bottom: "3%",
+  },
+  {
+    id: 11,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
+    top: "BACKGROUND",
+    middle: "Lightblue",
+    bottom: "3%",
+  },
+  {
+    id: 12,
+    userImg: "/assets/images/elipse.png",
+    dollar: "$11,530,785",
+    title: "IrakliN",
+    top: "BACKGROUND",
+    middle: "Lightblue",
+    bottom: "3%",
+  },
 ];
 
 export default DIV_INFO;

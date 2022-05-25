@@ -4,13 +4,13 @@ import Popular from "./Popular/Popular";
 
 import NtfCard from "./nftCard/NtfCard";
 import { TopSellers } from "./top_sellers_section/TopSellers";
-import Data from "../../dummyData/second_data";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
-
 import { useSelector } from "react-redux";
+
 function Main() {
   const reduxNft = useSelector((state) => state);
+  console.log(reduxNft.nftData);
   return (
     <div className="wrapper">
       <Popular first_word="Most" second_word="Popular" />
@@ -22,7 +22,7 @@ function Main() {
           marginBottom: "73px",
         }}
       >
-        {reduxNft.data.map((item) => (
+        {reduxNft.nftData.map((item) => (
           <NtfCard item={item} key={item.id} />
         ))}
       </section>
@@ -80,13 +80,7 @@ function Main() {
       </div>
       <Popular first_word="Explore" second_word="Artworks" />
 
-      <section
-        style={{
-          marginBottom: "100px",
-          display: "grid",
-          gridTemplateColumns: "repeat(4,  1fr)",
-        }}
-      >
+      <section className="nft-explore">
         {reduxNft.exploreData.map((item) => (
           <NtfCard item={item} key={item.id} />
         ))}
