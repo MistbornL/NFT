@@ -69,10 +69,29 @@
 
 .container {
   display: flex;
-  width: 1440px;
+  width: 100%;
   height: 85px;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.container :first-child {
+  /* display: none; */
+}
+
+@media screen and (min-width: 976px) {
+  .container {
+    display: flex;
+    width: 1440px;
+    height: 85px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container:first-child {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .search input {
