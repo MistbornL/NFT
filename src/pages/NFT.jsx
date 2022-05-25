@@ -14,12 +14,14 @@ import { PriceHistory } from "../components/nft/PriceHistory";
 import heart from "../ui/heart.svg";
 import eye from "../ui/eye.png";
 import share from "../ui/share.png";
+import { useSelector } from "react-redux";
 
 export const NFT = () => {
   const params = useParams();
   const [singleCard, setSingleCard] = useState({ id: 0 });
   const [toggleTopArrow, setToggleTopArrow] = useState(true);
   const [toggleBottomArrow, setToggleBottomArrow] = useState(true);
+  const reduxNft = useSelector((state) => state);
 
   useEffect(() => {
     const card = NFT_CARDS.filter((c) => c.id === Number(params.id))[0];

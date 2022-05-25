@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 
 function Main() {
   const reduxNft = useSelector((state) => state);
-  console.log(reduxNft.nftData);
   return (
     <div className="wrapper">
       <Popular first_word="Most" second_word="Popular" />
