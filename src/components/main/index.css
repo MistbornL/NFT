@@ -137,15 +137,33 @@
   margin-bottom: 50px;
   display: grid;
   justify-items: center;
-  width: 1440px;
+  width: 100%;
   background: linear-gradient(
     89.98deg,
     rgba(40, 65, 130, 0.05) 3.28%,
     rgba(109, 33, 102, 0.05) 99.98%
   );
   justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
+}
+
+@media screen and (min-width: 976px) {
+  .middleel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    background: linear-gradient(
+      89.98deg,
+      rgba(40, 65, 130, 0.05) 3.28%,
+      rgba(109, 33, 102, 0.05) 99.98%
+    );
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+  }
 }
 
 .about {
