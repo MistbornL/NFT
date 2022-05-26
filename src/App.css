@@ -39,10 +39,8 @@
 
 .txt p {
   position: absolute;
-  width: 90px;
-  height: 30px;
-  left: 194px;
-  top: 24px;
+  width: 5.625rem;
+  height: 1.875rem;
 
   font-family: "Nico Moji";
   font-style: normal;
@@ -63,14 +61,14 @@
 
 .logo {
   display: flex;
-  width: 187px;
-  height: 52px;
+  width: 11.688rem;
+  height: 3.25rem;
 }
 
 .container {
   display: flex;
   width: 100%;
-  height: 85px;
+  height: 5.313rem;
   /* align-items: center; */
   /* justify-content: space-between; */
 }
