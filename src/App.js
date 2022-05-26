@@ -13,6 +13,7 @@ function App() {
       <Route path="/Explore" element={<Explore />} />
       <Route path="/Activity" element={<Activity />} />
       <Route path="/Nft-card/:id" element={<NFT />} />
+      <Route path="/Nft-card/:title" element={<NFT />} />
     </Routes>
   );
 }
