@@ -1,4 +1,4 @@
-import { CHANGE_LIKED } from "./types";
+import { CHANGE_LIKED, TOGGLE_SEARCH } from "./types";
 
 export const changeLiked = (id, liked, numberOfLikes) => ({
   type: CHANGE_LIKED,

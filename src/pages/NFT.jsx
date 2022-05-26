@@ -18,15 +18,15 @@ import { useSelector } from "react-redux";
 
 export const NFT = () => {
   const params = useParams();
-  const [singleCard, setSingleCard] = useState({ id: 0 });
+  const [singleCard, setSingleCard] = useState({ title: "" });
   const [toggleTopArrow, setToggleTopArrow] = useState(true);
   const [toggleBottomArrow, setToggleBottomArrow] = useState(true);
   const reduxNft = useSelector((state) => state);
 
   useEffect(() => {
-    const card = NFT_CARDS.filter((c) => c.id === Number(params.id))[0];
+    const card = NFT_CARDS.filter((c) => c.title === params.id)[0];
     setSingleCard(card);
-  }, [params.id]);
+  }, [params.title]);
 
   const clickHandleTop = () => {
     setToggleTopArrow(!toggleTopArrow);
