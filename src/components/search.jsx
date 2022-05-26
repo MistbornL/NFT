@@ -9,7 +9,7 @@ const Search = () => {
     setSearchVar(e.target.value);
   };
 
-  handleKeyPress = (e) => {
+  const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       console.log("enter press here! ");
     }
