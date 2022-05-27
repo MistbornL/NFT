@@ -61,15 +61,13 @@
 
 .logo {
   display: flex;
-  width: 11.688rem;
-  height: 3.25rem;
 }
 
 .container {
   display: flex;
   width: 100%;
   height: 5.313rem;
-  /* align-items: center; */
+  align-items: center;
   /* justify-content: space-between; */
 }
 
@@ -100,6 +98,11 @@
   border: 1px solid #2d4662;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.search input:focus {
+  outline: 3px;
+  color: white;
 }
 
 ::placeholder {

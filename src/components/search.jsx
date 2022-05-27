@@ -2,12 +2,11 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-const Search = ({ toggle }) => {
+const Search = () => {
   const reduxNft = useSelector((state) => state);
   const [searchVar, setSearchVar] = useState("");
   const [searchBool, setSearchBool] = useState(false);
   const navigate = useNavigate();
-  console.log(searchBool);
 
   const handleChange = (e) => {
     setSearchVar(e.target.value);
@@ -21,9 +20,10 @@ const Search = ({ toggle }) => {
           navigate(`/NFT-card/${nft.title}`);
         } else {
           setSearchBool(false);
-          console.log(nft.title === searchVar);
+          // navigate(`/NFT-card'/${nft.title}`);
         }
       }
+      return nft;
     });
   };
 

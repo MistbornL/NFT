@@ -24,7 +24,7 @@ export const NFT = () => {
   const reduxNft = useSelector((state) => state);
 
   useEffect(() => {
-    const card = NFT_CARDS.filter((c) => c.title === params.id)[0];
+    const card = NFT_CARDS.filter((c) => c.title === params.title)[0];
     setSingleCard(card);
   }, [params.title]);
 

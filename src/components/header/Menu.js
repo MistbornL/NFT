@@ -6,7 +6,7 @@ import Nav from "../navigation/nav";
 export const Menu = () => {
   return (
     <div className="container">
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ display: "contents", alignItems: "center" }}>
         <Logo />
         <Search />
       </div>
