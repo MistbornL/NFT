@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NFT_CARDS from "../dummyData/data";
 import { useParams } from "react-router-dom";
 import "../components/header/index.css";
 import { Menu } from "../components/header/Menu";
@@ -24,9 +23,9 @@ export const NFT = () => {
   const reduxNft = useSelector((state) => state);
 
   useEffect(() => {
-    const card = NFT_CARDS.filter((c) => c.title === params.title)[0];
+    const card = reduxNft.nftData.filter((c) => c.title === params.title)[0];
     setSingleCard(card);
-  }, [params.title]);
+  }, [reduxNft.nftData, params.title]);
 
   const clickHandleTop = () => {
     setToggleTopArrow(!toggleTopArrow);

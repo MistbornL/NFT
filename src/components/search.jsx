@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Search = () => {
   const reduxNft = useSelector((state) => state);
   const [searchVar, setSearchVar] = useState("");
-  const [searchBool, setSearchBool] = useState(false);
+  // const [searchBool, setSearchBool] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -15,12 +15,15 @@ const Search = () => {
   const handleKeyPress = (e) => {
     reduxNft.nftData.map((nft) => {
       if (e.key === "Enter") {
-        if (nft.title.includes(searchVar.slice(0, 3))) {
-          setSearchBool(true);
+        const title = nft.title.toLowerCase();
+        const searchLower = searchVar.toLowerCase();
+        if (title.includes(searchLower.slice(0, 3))) {
+          // setSearchBool(true);
           navigate(`/NFT-card/${nft.title}`);
         } else {
-          setSearchBool(false);
+          // setSearchBool(false);
           // navigate(`/NFT-card'/${nft.title}`);
+          console.log("not found");
         }
       }
       return nft;
