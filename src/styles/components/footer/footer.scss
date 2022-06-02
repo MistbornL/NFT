@@ -63,24 +63,23 @@
   }
 }
 
-.raw p {
-  margin: 0;
-  width: auto;
-  height: 21px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-
-  color: rgba(251, 253, 255, 0.7);
-}
-
 .raw {
   display: flex;
   flex-direction: column;
   gap: 7px;
   height: 21px;
+
+  p {
+    margin: 0;
+    width: auto;
+    height: 21px;
+    @include basicFontStyle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: rgba(251, 253, 255, 0.7);
+  }
 }
 
 .footer-right {
@@ -93,27 +92,30 @@
 .footer-title {
   display: flex;
   flex-direction: column;
-}
 
-.footer-title input {
-  border-bottom: none;
-  background: rgba(73, 86, 106, 0.35);
-  border-radius: 10px;
-  width: 289px;
-  height: 44px;
-}
+  input {
+    border-bottom: none;
+    background: rgba(73, 86, 106, 0.35);
+    border-radius: 10px;
+    width: 289px;
+    height: 44px;
+  }
+  button {
+    width: 111px;
+    height: 44px;
+    outline: none;
 
-.footer-title button {
-  width: 111px;
-  height: 44px;
-  outline: none;
+    background: #4075ff;
+    border-radius: 10px;
+  }
+  button {
+    width: 111px;
+    height: 44px;
+    outline: none;
 
-  background: #4075ff;
-  border-radius: 10px;
-}
-
-.footer-title input:placeholder-shown {
-  color: white;
+    background: #4075ff;
+    border-radius: 10px;
+  }
 }
 
 .linee {
@@ -124,15 +126,14 @@
   width: 920px;
   height: 1px;
   background: #363636;
-}
 
-.linee p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height */
+  p {
+    @include basicFontStyle;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
