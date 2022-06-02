@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "../components/header/index.css";
+import "../components/header/header.scss";
 import { Menu } from "../components/header/Menu";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import Popular from "../components/main/Popular/Popular";

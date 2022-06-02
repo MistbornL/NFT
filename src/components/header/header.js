@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./index.css";
+import "./header.scss";
 import "../../pages/index.css";
 import Middle from "./middle_head/middle";
 import { Menu } from "./Menu";

@@ -2,7 +2,7 @@ import { Footer } from "../components/footer/Footer";
 import Header from "../components/header/header";
 import Info from "../components/header/info";
 import Main from "../components/main/main";
-import "../components/header/index.css";
+import "../components/header/header.scss";
 import "./index.css";
 
 const Home = () => {

@@ -1,5 +1,5 @@
 import { Menu } from "../components/header/Menu";
-import "../components/header/index.css";
+import "../components/header/header.scss";
 import "../styles/pages/explore.css";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import "../components/main/nftCard/nftCard.css";
