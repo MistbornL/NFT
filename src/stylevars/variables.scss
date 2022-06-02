@@ -1,6 +1,16 @@
-@mixin basicFontStyle {
+@mixin basicFontStyle(
+  $weight: 700,
+  $size: 40px,
+  $height: 60px,
+  $color: #ffffff
+) {
   font-family: "Poppins";
   font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+
+  color: $color;
 }
 
 @mixin flexCenter($justify: center) {
