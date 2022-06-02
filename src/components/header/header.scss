@@ -137,8 +137,7 @@
     border-radius: 10px;
     color: white;
 
-    font-family: "Poppins";
-    font-style: normal;
+    @include basicFontStyle;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -162,7 +161,6 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
 
   color: #4075ff;
 }
@@ -206,19 +204,4 @@
 
     color: #ffffff;
   }
-}
-
-.description-card {
-  /* float: right; */
-  width: 682px;
-  height: 300px;
-  background: #111d25;
-  border-radius: 10px;
-}
-
-.history {
-  width: 682px;
-  height: 343px;
-  background: #111d25;
-  border-radius: 10px;
 }
