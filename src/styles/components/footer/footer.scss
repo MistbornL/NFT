@@ -24,12 +24,7 @@
     height: 82px;
     width: 275px;
 
-    @include basicFontStyle;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-
-    color: #c1c1c1;
+    @include basicFontStyle(400, 12px, 18px, #c1c1c1);
   }
 }
 
