@@ -106,8 +106,8 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 10px #f321e2, 0 0 40px #b510c4, 0 0 80px #780794;
-  background: #062574;
+  box-shadow: 0 0 10px #2f21f3, 0 0 40px #3110c4, 0 0 80px #780794;
+  background: #3f0674;
 }
 
 .card-cover span {

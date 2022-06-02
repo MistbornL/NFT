@@ -1,7 +1,8 @@
 @import "../../stylevars/variables.scss";
 
 .wallet {
-  position: absolute;
+  position: relative;
+  transform: translateY(-50%);
   width: 751px;
   height: 587px;
   left: 620px;
@@ -56,10 +57,12 @@
   }
 }
 
-// body {
-//   opacity: 0.5;
-//   filter: blur(10px);
-// }
-// body:not(.wallet) {
-//   filter: blur(6px);
-// }
+.popup-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+}

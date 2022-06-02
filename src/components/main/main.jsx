@@ -14,7 +14,7 @@ function Main() {
 
   return (
     <div className="wrapper">
-      {reduxNft.isPopUp ? <Popup /> : null}
+      {reduxNft.isPopUp ? <Popup style={{ filter: "blur(6px)" }} /> : null}
       <Popular first_word="Most" second_word="Popular" />
 
       <section
