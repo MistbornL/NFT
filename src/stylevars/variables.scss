@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-@mixin flexSpaceBetween {
+@mixin flexSpaceAround {
   display: flex;
   justify-content: space-around;
   text-align: center;

@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../ui/logo.svg";
 import Elipse from "../../ui/elipse.png";
-import "../../styles/components/footer/footer.css";
+import "../../styles/components/footer/footer.scss";
 
 export const Footer = () => {
   return (

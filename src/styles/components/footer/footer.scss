@@ -1,3 +1,5 @@
+@import "../../../stylevars//variables.scss";
+
 .footer {
   padding: 80px;
   display: flex;
@@ -7,39 +9,38 @@
   margin-top: -70px;
   margin: auto;
   background-color: #111d25;
+
+  title {
+    width: 103px;
+    height: 24px;
+  }
 }
 
 .footer-left-bottom {
   flex-direction: column;
   display: flex;
+
+  p {
+    height: 82px;
+    width: 275px;
+
+    @include basicFontStyle;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #c1c1c1;
+  }
 }
 
 .footer-logo {
   display: flex;
   gap: 12px;
-}
 
-.footer-logo img {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-left-bottom p {
-  height: 82px;
-  width: 275px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-
-  color: #c1c1c1;
-}
-
-.footer title {
-  width: 103px;
-  height: 24px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .footer-middle {
@@ -51,16 +52,15 @@
 
 .footer-title {
   gap: 12px;
-}
 
-.footer-title h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  h1 {
+    @include basicFontStyle;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
 
 .raw p {
