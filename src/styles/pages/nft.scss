@@ -25,13 +25,8 @@
   p {
     width: 100%;
     display: flex;
-    @include basicFontStyle;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    @include basicFontStyle(400, 13px, 20px, #aeaeae);
     letter-spacing: 0.035em;
-
-    color: #aeaeae;
   }
 }
 
@@ -48,13 +43,7 @@
   border-radius: 10px;
 
   h1 {
-    @include basicFontStyle;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
-
-    color: #ffffff;
+    @include basicFontStyle(600, 18px, 27px);
 
     width: 105px;
     height: 27px;
@@ -90,13 +79,7 @@
   height: 52px;
 
   h1 {
-    @include basicFontStyle;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    /* identical to box height */
-
-    color: #ffffff;
+    @include basicFontStyle(600, 28px, 42px);
   }
 }
 
@@ -112,7 +95,8 @@
   div {
     @include flexCenter;
     height: min-content;
-    @include basicFontStyle;
+    font-family: "Poppins";
+    font-style: normal;
     background: #19252d;
     border-radius: 10px;
   }
@@ -127,13 +111,7 @@
   p {
     display: flex;
     gap: 5px;
-    @include basicFontStyle;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height */
-
-    color: #a2a2a2;
+    @include basicFontStyle(500, 12px, 18px, #a2a2a2);
   }
 
   span {
@@ -164,12 +142,7 @@
   gap: 10px;
 
   h1 {
-    @include basicFontStyle;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #ffffff;
+    @include basicFontStyle(600, 16px, 24px);
   }
 
   div {
@@ -177,13 +150,7 @@
   }
 
   h1 > span {
-    @include basicFontStyle;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height */
-
-    color: #737373;
+    @include basicFontStyle(500, 12px, 18px, #737373);
   }
 }
 
@@ -250,25 +217,12 @@
     text-align: center;
 
     th {
-      @include basicFontStyle;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      /* identical to box height */
-
-      color: #a2a2a2;
+      @include basicFontStyle(500, 12px, 18px, #a2a2a2);
     }
 
     td {
-      @include basicFontStyle;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
-      /* identical to box height */
-
+      @include basicFontStyle(500, 14px, 21px);
       letter-spacing: 0.035em;
-
-      color: #ffffff;
     }
   }
 }
@@ -299,13 +253,7 @@
 
 .listings h1 {
   margin-left: 30px;
-  @include basicFontStyle;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
-
-  color: #ffffff;
+  @include basicFontStyle(600, 18pxm 27px);
 
   img {
     cursor: pointer;
