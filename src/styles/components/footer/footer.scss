@@ -49,12 +49,7 @@
   gap: 12px;
 
   h1 {
-    @include basicFontStyle;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #ffffff;
+    @include basicFontStyle(600, 16px, 24px);
   }
 }
 
@@ -68,12 +63,7 @@
     margin: 0;
     width: auto;
     height: 21px;
-    @include basicFontStyle;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-
-    color: rgba(251, 253, 255, 0.7);
+    @include basicFontStyle(500, 14px, 21px, rgba(251, 253, 255, 0.7));
   }
 }
 
@@ -123,12 +113,6 @@
   background: #363636;
 
   p {
-    @include basicFontStyle;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height */
-
-    color: rgba(255, 255, 255, 0.6);
+    @include basicFontStyle(500, 12px, 18px, rgba(255, 255, 255, 0.6));
   }
 }

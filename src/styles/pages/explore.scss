@@ -18,11 +18,11 @@
   ul {
     @include flexCenter(space-around);
     height: 60px;
+    align-items: center;
   }
 
   li {
-    @include basicFontStyle(500, 16px, 24, #b4b4b4);
-
+    @include basicFontStyle(500, 16px, 24px, #b4b4b4);
     list-style: none;
   }
 }
