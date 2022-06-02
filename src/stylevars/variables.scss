@@ -1,0 +1,10 @@
+@mixin basicFontStyle {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

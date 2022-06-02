@@ -1,3 +1,5 @@
+@import "../../stylevars/variables.scss";
+
 .tuar_daarqvi {
   display: flex;
   text-align: center;
@@ -37,8 +39,7 @@
   box-shadow: 0px 4px 34px 4px rgba(64, 117, 255, 0.3);
   border-radius: 10px;
   color: #ffffff;
-  font-family: "Poppins";
-  font-style: normal;
+  @include basicFontStyle;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -161,8 +162,7 @@
   box-sizing: border-box;
   border-radius: 10px;
 
-  font-family: "Poppins";
-  font-style: normal;
+  @include basicFontStyle;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -174,9 +174,7 @@
 .info {
   gap: 40px;
   margin-bottom: 70px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  @include flexCenter;
   width: 100%;
   padding: 1px;
   background: linear-gradient(
@@ -187,17 +185,15 @@
 }
 
 .box {
-  display: flex;
+  @include flexCenter;
   flex-direction: column;
-  justify-content: center;
   width: 80px;
   height: 93px;
 
   h2 {
     margin: 0;
     align-items: center;
-    font-family: "Poppins";
-    font-style: normal;
+    @include basicFontStyle;
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
@@ -208,8 +204,7 @@
     margin: 0;
     width: 80px;
     height: 30px;
-    font-family: "Poppins";
-    font-style: normal;
+    @include basicFontStyle;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
