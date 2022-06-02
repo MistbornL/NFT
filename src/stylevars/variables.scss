@@ -15,6 +15,17 @@
   gap: 10px;
 }
 
+@mixin gridStyle4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: space-around;
+}
+
+@mixin gridStyle2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @mixin flexSpaceBetween {
   display: flex;
   justify-content: space-between;

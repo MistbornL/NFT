@@ -4,7 +4,7 @@ import "../components/header/header.scss";
 import { Menu } from "../components/header/Menu";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import Popular from "../components/main/Popular/Popular";
-import "../styles/pages/nft.css";
+import "../styles/pages/nft.scss";
 import { Footer } from "../components/footer/Footer";
 import nft from "../ui/nft.png";
 import DownArrow from "../ui/DownArrow.svg";
