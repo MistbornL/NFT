@@ -7,11 +7,14 @@ import { TopSellers } from "./top_sellers_section/TopSellers";
 import aboutImg from "../../ui/aboutImg.png";
 import Play from "../../ui/play.svg";
 import { useSelector } from "react-redux";
+import { Popup } from "../popup/Popup";
 
 function Main() {
   const reduxNft = useSelector((state) => state);
+
   return (
     <div className="wrapper">
+      {reduxNft.isPopUp ? <Popup /> : null}
       <Popular first_word="Most" second_word="Popular" />
 
       <section

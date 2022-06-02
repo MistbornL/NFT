@@ -1,4 +1,4 @@
-import { CHANGE_LIKED } from "./types";
+import { CHANGE_LIKED, RENDER_POPUP } from "./types";
 
 export const changeLiked = (id, liked, numberOfLikes) => ({
   type: CHANGE_LIKED,
@@ -6,5 +6,12 @@ export const changeLiked = (id, liked, numberOfLikes) => ({
     id,
     liked,
     numberOfLikes,
+  },
+});
+
+export const renderPopUp = (isPopUp) => ({
+  type: RENDER_POPUP,
+  payload: {
+    isPopUp,
   },
 });

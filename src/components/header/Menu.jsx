@@ -2,8 +2,15 @@ import React from "react";
 import Logo from "../logo";
 import Search from "../search";
 import Nav from "../navigation/nav";
+import { useDispatch } from "react-redux";
+import { renderPopUp } from "../../state/actions";
 
 export const Menu = () => {
+  const dispatch = useDispatch();
+
+  const handlePop = () => {
+    dispatch(renderPopUp(true));
+  };
   return (
     <div className="container">
       <div style={{ display: "contents", alignItems: "center" }}>
@@ -14,7 +21,7 @@ export const Menu = () => {
       <nav className="futa">
         <Nav />
         <div className="btn">
-          <button type="submit" value="Submit">
+          <button onClick={handlePop} type="submit" value="Submit">
             Connect Wallet
           </button>
         </div>

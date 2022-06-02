@@ -1,0 +1,45 @@
+@import "../../stylevars/variables.scss";
+
+.wallet {
+  position: absolute;
+  width: 751px;
+  height: 587px;
+  left: 352px;
+  top: 407px;
+
+  background: #111d25;
+  border-radius: 10px;
+
+  h1 {
+    @include basicFontStyle;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.wallet-button {
+  @include flexCenter;
+  flex-direction: column;
+
+  button {
+    width: 320px;
+    height: 50px;
+    background: #0085ff;
+    border-radius: 10px;
+  }
+}

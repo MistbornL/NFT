@@ -71,10 +71,6 @@
   /* justify-content: space-between; */
 }
 
-.container :first-child {
-  /* display: none; */
-}
-
 @media screen and (min-width: 976px) {
   .container {
     display: flex;

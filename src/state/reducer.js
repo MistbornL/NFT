@@ -1,12 +1,13 @@
 import NFT_CARDS from "../dummyData/data";
 import DIV_INFO from "../dummyData/data_for_sd";
 import EXPLORE_DATA from "../dummyData/explore_data";
-import { CHANGE_LIKED } from "./types";
+import { CHANGE_LIKED, RENDER_POPUP } from "./types";
 
 const initialState = {
   nftData: [...NFT_CARDS],
   exploreData: [...EXPLORE_DATA],
   divInfo: [...DIV_INFO],
+  isPopUp: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -34,6 +35,11 @@ const reducer = (state = initialState, action) => {
           }
           return nft;
         }),
+      };
+    case RENDER_POPUP:
+      return {
+        ...state,
+        isPopUp: action.payload.isPopUp,
       };
     default:
       return state;
