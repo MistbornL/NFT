@@ -31,3 +31,9 @@
   justify-content: space-between;
   text-align: center;
 }
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}

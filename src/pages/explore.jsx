@@ -1,6 +1,6 @@
 import { Menu } from "../components/header/Menu";
 import "../components/header/header.scss";
-import "../styles/pages/explore.css";
+import "../styles/pages/explore.scss";
 import NtfCard from "../components/main/nftCard/NtfCard";
 import "../components/main/nftCard/nftCard.css";
 import { Footer } from "../components/footer/Footer";
