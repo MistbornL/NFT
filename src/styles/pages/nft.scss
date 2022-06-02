@@ -253,7 +253,7 @@
 
 .listings h1 {
   margin-left: 30px;
-  @include basicFontStyle(600, 18pxm 27px);
+  @include basicFontStyle(600, 18px, 27px);
 
   img {
     cursor: pointer;

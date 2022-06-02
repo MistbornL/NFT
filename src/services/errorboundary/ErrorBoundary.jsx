@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.scss";
 class ErrorBoundary extends React.Component {
   state = {
     error: null,

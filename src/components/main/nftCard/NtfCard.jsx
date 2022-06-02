@@ -1,5 +1,5 @@
 import React from "react";
-import "./nftCard.css";
+import "./nftCard.scss";
 import { ReactComponent as Heart } from "../../../ui/heart.svg";
 import nft from "../../../ui/nft.png";
 import { Link } from "react-router-dom";

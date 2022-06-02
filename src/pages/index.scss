@@ -1,3 +1,4 @@
+@import "../stylevars/variables.scss";
 .wrap {
   width: 100%;
   max-width: 1440px;
@@ -6,13 +7,7 @@
 }
 
 p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 22px;
-
-  color: #ffffff;
+  @include basicFontStyle(600, 15px, 22px);
 }
 
 ul li {

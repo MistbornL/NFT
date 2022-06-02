@@ -1,7 +1,7 @@
 import React from "react";
 import DIV_INFO from "../../dummyData/data_for_sd";
 import { SmallDiv } from "./SmallDiv";
-import "./index.css";
+import "./index.scss";
 
 export const PriceHistory = () => {
   return (

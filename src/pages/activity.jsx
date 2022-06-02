@@ -1,16 +1,14 @@
 import { NavLink } from "react-router-dom";
-import "./index.css"
-
+import "./index.scss";
 
 const Activity = () => {
-    return (
-        <div className="wrap">
-            <NavLink to="/activity">
-                <p>activity</p>
-            </NavLink>
-        </div>
-    )
-}
-
+  return (
+    <div className="wrap">
+      <NavLink to="/activity">
+        <p>activity</p>
+      </NavLink>
+    </div>
+  );
+};
 
 export default Activity;
