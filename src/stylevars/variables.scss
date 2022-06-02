@@ -3,37 +3,13 @@
   font-style: normal;
 }
 
-@mixin flexCenter {
+@mixin flexCenter($justify: center) {
   display: flex;
-  justify-content: center;
+  justify-content: $justify;
   text-align: center;
 }
 
-@mixin gridStyle3 {
+@mixin gridStyle($repeat, $justify: space-around) {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-@mixin gridStyle4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: space-around;
-}
-
-@mixin gridStyle2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-@mixin flexSpaceBetween {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-@mixin flexSpaceAround {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+  grid-template-columns: repeat($repeat, 1fr);
 }

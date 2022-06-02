@@ -1,5 +1,15 @@
 @import "../../stylevars/variables.scss";
 
+.popup-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+}
+
 .wallet {
   position: relative;
   transform: translateY(-50%);
@@ -55,14 +65,4 @@
     background: #111d25;
     border-radius: 10px;
   }
-}
-
-.popup-wrapper {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(6px);
 }

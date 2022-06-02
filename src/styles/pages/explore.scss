@@ -22,7 +22,7 @@
   border-radius: 10px;
 
   ul {
-    @include flexSpaceAround;
+    @include flexCenter(space-around);
     height: 60px;
   }
 

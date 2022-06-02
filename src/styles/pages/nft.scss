@@ -80,12 +80,13 @@
   width: 27em;
   overflow-y: auto;
   overflow-x: hidden;
-  @include gridStyle3;
+  @include gridStyle(3);
+  gap: 10px;
 }
 
 .description-top {
   text-align: center;
-  @include flexSpaceBetween;
+  @include flexCenter(space-between);
   height: 52px;
 
   h1 {
@@ -159,7 +160,7 @@
 }
 
 .description-main {
-  @include flexSpaceBetween;
+  @include flexCenter(space-between);
   gap: 10px;
 
   h1 {
@@ -337,12 +338,12 @@
 
 .nft-explore {
   margin-bottom: 100px;
-  @include gridStyle2;
+  @include gridStyle(2);
 }
 
 @media screen and (min-width: 976px) {
   .nft-explore {
     margin-bottom: 100px;
-    @include gridStyle4;
+    @include gridStyle(4, center);
   }
 }
