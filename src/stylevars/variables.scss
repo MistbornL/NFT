@@ -8,3 +8,15 @@
   justify-content: center;
   text-align: center;
 }
+
+@mixin gridStyle3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}

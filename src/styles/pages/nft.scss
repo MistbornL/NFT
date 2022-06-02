@@ -1,3 +1,5 @@
+@import "../../stylevars/variables.scss";
+
 .line {
   position: absolute;
   width: 100%;
@@ -19,19 +21,18 @@
   width: 404px;
   height: 238px;
   overflow: auto;
-}
 
-.scroll p {
-  width: 100%;
-  display: flex;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.035em;
+  p {
+    width: 100%;
+    display: flex;
+    @include basicFontStyle;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.035em;
 
-  color: #aeaeae;
+    color: #aeaeae;
+  }
 }
 
 .description {
@@ -45,20 +46,19 @@
   height: 343px;
   background: #111d25;
   border-radius: 10px;
-}
 
-.description h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
+  h1 {
+    @include basicFontStyle;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
 
-  color: #ffffff;
+    color: #ffffff;
 
-  width: 105px;
-  height: 27px;
+    width: 105px;
+    height: 27px;
+  }
 }
 
 .line-for-div {
@@ -80,49 +80,41 @@
   width: 27em;
   overflow-y: auto;
   overflow-x: hidden;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  @include gridStyle3;
 }
 
 .description-top {
   text-align: center;
-  align-items: center;
+  @include flexSpaceBetween;
   height: 52px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.description-top h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 42px;
-  /* identical to box height */
+  h1 {
+    @include basicFontStyle;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
 
 .description-top-right {
   gap: 20px;
   text-align: center;
   display: flex;
-}
 
-.description-top-right p {
-  margin: 0;
-}
+  p {
+    margin: 0;
+  }
 
-.description-top-right div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: min-content;
-  font-family: "Poppins";
-  font-style: normal;
-  background: #19252d;
-  border-radius: 10px;
+  div {
+    @include flexCenter;
+    height: min-content;
+    @include basicFontStyle;
+    background: #19252d;
+    border-radius: 10px;
+  }
 }
 
 .description-card {
@@ -130,56 +122,54 @@
   padding: 15px 20px;
 }
 
-.owner p {
-  display: flex;
-  gap: 5px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height */
+.owner {
+  p {
+    display: flex;
+    gap: 5px;
+    @include basicFontStyle;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
 
-  color: #a2a2a2;
-}
+    color: #a2a2a2;
+  }
 
-.owner span {
-  color: rgba(64, 117, 255, 0.4);
+  span {
+    color: rgba(64, 117, 255, 0.4);
+  }
 }
 
 .bid-countdown {
   border-top: solid #1d2931;
   display: flex;
   justify-content: space-between;
-}
 
-.bid-countdown p {
-  width: 70px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height */
+  p {
+    width: 70px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
 
-  color: #a2a2a2;
+    color: #a2a2a2;
+  }
 }
 
 .description-main {
-  justify-content: space-between;
+  @include flexSpaceBetween;
   gap: 10px;
-  display: flex;
-  align-items: center;
-}
 
-.description-main h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  h1 {
+    @include basicFontStyle;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
 
 .description-main div {
