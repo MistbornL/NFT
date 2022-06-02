@@ -4,6 +4,7 @@ import cross from "../../ui/cross.svg";
 import dog from "../../ui/dog.png";
 import velny from "../../ui/velny.png";
 import wallet from "../../ui/wallet.png";
+import phantom from "../../ui/phantom.png";
 import { useDispatch } from "react-redux";
 import { renderPopUp } from "../../state/actions";
 export const Popup = () => {
@@ -35,7 +36,7 @@ export const Popup = () => {
             WalletConnect
           </button>
           <button>
-            <img src={dog} alt="dog" />
+            <img src={phantom} alt="dog" />
             Phantom
           </button>
           <button>
