@@ -72,6 +72,7 @@
 }
 
 .moon-statue {
+  display: flex;
   size: 100%;
   width: 620px;
   height: 640px;
@@ -109,12 +110,7 @@
   }
 
   span {
-    width: 480px;
-    height: 150px;
-    left: 140px;
-    top: 275px;
-    font-family: "Poppins";
-    font-style: normal;
+    @include basicFontStyle;
     font-weight: 700;
     font-size: 50px;
     line-height: 75px;
@@ -192,7 +188,6 @@
 
   h2 {
     margin: 0;
-    align-items: center;
     @include basicFontStyle;
     font-weight: 600;
     font-size: 28px;
