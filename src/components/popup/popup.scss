@@ -4,11 +4,13 @@
   position: absolute;
   width: 751px;
   height: 587px;
-  left: 352px;
+  left: 620px;
   top: 407px;
 
   background: #111d25;
   border-radius: 10px;
+  @include flexCenter;
+  flex-direction: column;
 
   h1 {
     @include basicFontStyle;
@@ -27,13 +29,13 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-
+    display: flex;
     color: rgba(255, 255, 255, 0.5);
   }
 }
 
 .wallet-button {
-  @include flexCenter;
+  display: flex;
   flex-direction: column;
 
   button {
@@ -42,4 +44,12 @@
     background: #0085ff;
     border-radius: 10px;
   }
+}
+
+// body {
+//   opacity: 0.5;
+//   filter: blur(10px);
+// }
+body:not(.wallet) {
+  filter: blur(7px);
 }
